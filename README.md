@@ -4,6 +4,14 @@ An agent skill that turns a vertical talking-head video into a polished Instagra
 
 Built while editing the **Building Backend Systems** series (Message Queues, Database Indexes) and a weekly tech news roundup.
 
+## Demo
+
+<p align="center">
+  <img src="demo/preview.gif" width="300" alt="B+Tree search animation synced to the speaker, with Hinglish captions">
+</p>
+
+**[Watch the full reel (Database Indexes, 1:57)](demo/database-indexes-reel.mp4)**
+
 ## What it does
 
 - **Explainer mode:** record yourself in the bottom part of a 9:16 frame and leave the top empty. The skill fills the empty area with an animated explainer: problem, solution, flow diagrams, comparisons, stamps, and a takeaway, each scene timed to when you say it.

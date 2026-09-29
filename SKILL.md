@@ -44,7 +44,7 @@ After the answers, work through the rest without further check-ins, unless somet
    - If one was given, use it word for word.
    - Otherwise transcribe with Whisper (small or medium, correct language, `initial_prompt` listing the technical terms) on short windows. Mixed-language speech (e.g. Hinglish) is hard for ASR: combine a multilingual and an English pass, rebuild the lines, and tell the user which lines are uncertain.
 4. **Plan scenes:** one scene per idea, starting within 0.5 s of when the speaker starts that point. Write a timeline table (t0, t1, scene, visuals) before coding.
-5. **Build the panel:** a Python/PIL per-frame renderer piped as raw RGBA into ffmpeg (see `scripts/panel_example.py`). Preview 12 to 16 timestamps in one grid image, fix any overlap or overflow, then render.
+5. **Build the panel:** a Python/PIL per-frame renderer piped as raw RGBA into ffmpeg (see `scripts/panel_example.py` for the cream theme and `scripts/panel_example_blueprint.py` for the dark blue theme with a technology logo). Preview 12 to 16 timestamps in one grid image, fix any overlap or overflow, then render.
 6. **Captions:** `scripts/build_captions.py` (exact text, voiced-time sync, keyword highlights) produces an ASS file, burned in with ffmpeg's `ass` filter.
 7. **Render:** a master at CRF 18, plus a two-pass H.264 copy at about 1750k video / 128k audio, which keeps a ~2 min reel under 30 MB.
 8. **Deliver:** the video, a one-line summary per scene, any uncertain caption lines, and (if asked) a short Instagram caption and 5 to 6 hashtags.
@@ -72,6 +72,7 @@ Keep on-screen text short. The diagram explains; the captions carry the words.
 - Keep content below y=100 (platform top UI) and above the wave.
 - **Background animation:** grid texture drifting slowly (offset `t*6, t*4`), grain, a few twinkling specks.
 - **Motion:** ease-out slide or fade, back-ease pop for chips and stamps, 0.3 s scene cross-fades, arrows that draw themselves, dots moving along paths.
+- **Boxes with an icon:** put the icon at the left inside the box and centre the label in the remaining space, shrinking the font to fit, so they never overlap.
 
 ## Theme library (rotate)
 
@@ -79,9 +80,11 @@ Keep on-screen text short. The diagram explains; the captions carry the words.
 |---|---|---|---|---|
 | Dark graph paper | #080A0D | #181D24 / #242B34 | #F0F3F6 | orange #FF9F1C, teal #2EC4B6, red #EF4444, green #22C55E, blue #3B82F6, yellow #FACC15 |
 | Cream graph paper | #F6F2E9 | #E2DCCE / #D2CABA | ink #1B2430 | teal #0C8C7C, orange #E87700, red #D63031, green #2B8A3E, blue #1C6EC4, highlighter #FFD43B |
-| Blueprint (dark blue) | #0E3A5C | #1D4E75 / #2A6190 | #EAF2FA | amber #FFB703, cyan #4CC9F0, coral #FF6B6B, lime #95D5B2 (used for Connection Pooling) |
+| Blueprint (dark blue) | #0E3A5C | #1D4E75 / #2A6190 | #EAF2FA | amber #FFB703, cyan #4CC9F0, coral #FF6B6B, lime #95D5B2 |
 | Chalkboard | #1F3A2E | #2B4A3C | chalk #EDEDE4 | yellow #FFD166, coral #EF8354, sky #8ECAE6 |
 | Newsprint | #EFE9DD | dotted #D9D0BF | #222222 | red #C0392B, navy #1D3557, mustard #E9A23B |
+
+Keep a note of which theme each reel used (and which was the latest), so the next reel picks a different one. Never guess episode numbers; ask.
 
 ## Captions spec
 
@@ -90,7 +93,7 @@ Keep on-screen text short. The diagram explains; the captions carry the words.
 - **Line length:** at most 2 lines, about 46 characters per chunk. Split at sentence or comma boundaries; attach short fragments like "So," to the next line.
 - **Timing:** by voiced time inside each transcript segment.
 - **Pop-in:** `{\fscx85\fscy85\t(0,120,\fscx103\fscy103)\t(120,200,\fscx100\fscy100)}`
-- **Highlights:** colour technical keywords and numbers in the theme's accent.
+- **Highlights:** colour a small set of key terms and numbers in the theme's accent. Don't highlight words that appear in almost every line.
 
 ## News roundup specifics
 

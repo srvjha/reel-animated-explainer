@@ -49,6 +49,7 @@ It will ask its intake questions, show a preview grid of the scenes, then render
 |---|---|
 | `SKILL.md` | The skill: intake questions, rules, workflow, scene recipe, themes, caption spec |
 | `scripts/panel_example.py` | Full working example of an animated panel (Database Indexes episode, cream graph-paper theme) |
+| `scripts/panel_example_blueprint.py` | Second example (Connection Pooling in PostgreSQL, dark blue blueprint theme, logo in boxes). Put the official logo at `pg_logo.png`, or it falls back to a text badge |
 | `scripts/build_captions.py` | Builds speech-synced ASS captions from a timestamped transcript |
 
 ## License

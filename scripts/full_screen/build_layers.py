@@ -74,7 +74,7 @@ html,body{{width:1080px;height:1920px;overflow:hidden;background:transparent}}
 """
 
 def page_doc(body):
-    fit = "<script>document.fonts.ready.then(()=>{for(const l of document.querySelectorAll('.board .cl')){const w=l.scrollWidth;if(w>950){l.style.fontSize=(74*950/w).toFixed(1)+'px'}}document.body.dataset.ready=1})</script>"
+    fit = "<script>for(const a of document.getAnimations()){a.pause();a.currentTime=0}document.fonts.ready.then(()=>{for(const a of document.getAnimations()){a.pause()}for(const l of document.querySelectorAll('.board .cl')){const w=l.scrollWidth;if(w>950){l.style.fontSize=(74*950/w).toFixed(1)+'px'}}document.body.dataset.ready=1})</script>"
     return f"<!doctype html><meta charset=utf-8><style>{BASE_CSS}\n{chr(10).join(KF)}</style><body>{body}{fit}</body>"
 
 # ---------------------------------------------------------------- arcade background (depth + cutaways)

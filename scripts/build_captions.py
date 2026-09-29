@@ -16,6 +16,7 @@ ap.add_argument("--margin-v", type=int, default=360, help="distance of caption b
 ap.add_argument("--size", type=int, default=58)
 ap.add_argument("--max-chars", type=int, default=46)
 ap.add_argument("--keywords", default="", help="comma-separated terms to highlight")
+ap.add_argument("--font", default="/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf")
 ap.add_argument("--hl", default="&H3BD4FF&", help="ASS BGR colour for highlights (default yellow #FFD43B)")
 a = ap.parse_args()
 
@@ -40,7 +41,20 @@ def chunks(text):
             if len(cur) + 1 + len(wd) > a.max_chars and cur: out.append(cur); cur = wd
             else: cur = (cur + " " + wd).strip()
         if cur: out.append(cur)
-    return out
+    # never leave a single word on its own: merge it into a neighbour
+    fixed = []
+    for c in out:
+        if len(c.split()) == 1 and fixed:
+            prev = fixed[-1].split()
+            if len(prev) >= 3 and len(" ".join(prev + [c])) > a.max_chars + 12:
+                fixed[-1] = " ".join(prev[:-1]); fixed.append(prev[-1] + " " + c)
+            else:
+                fixed[-1] = fixed[-1] + " " + c
+        else:
+            fixed.append(c)
+    if len(fixed) > 1 and len(fixed[0].split()) == 1:
+        fixed[1] = fixed[0] + " " + fixed[1]; fixed = fixed[1:]
+    return fixed
 
 caps = []
 for seg in json.load(open(a.segments)):
@@ -53,11 +67,26 @@ for seg in json.load(open(a.segments)):
     for j, c in enumerate(cs):
         caps.append((t_at(cl[j]), t_at(cl[j + 1]) if j < len(cs) - 1 else e, c))
 
+from PIL import ImageFont
+_F = ImageFont.truetype(a.font, a.size)
+MAXW = 1080 - 2 * 110
+def balance(c):
+    words = c.split()
+    if _F.getlength(c) <= MAXW or len(words) < 4: return c
+    best = None
+    for i in range(2, len(words) - 1):
+        l1, l2 = " ".join(words[:i]), " ".join(words[i:])
+        w1, w2 = _F.getlength(l1), _F.getlength(l2)
+        if max(w1, w2) <= MAXW and (best is None or abs(w1 - w2) < best[0]): best = (abs(w1 - w2), l1, l2)
+    return best[1] + " \\N " + best[2] if best else c
+caps = [(s0, e0, balance(c)) for s0, e0, c in caps]
+
 keys = [k.strip() for k in a.keywords.split(",") if k.strip()]
 def hl(s):
     if not keys: return s
     pat = "|".join(re.escape(k) for k in sorted(keys, key=len, reverse=True))
     return re.sub(r"(?i)(?<![\w+])(" + pat + r")(?![\w])", lambda m: "{\\c" + a.hl + "}" + m.group(1) + "{\\c&HFFFFFF&}", s)
+def fin(s): return hl(s).replace(" \\N ", "\\N")
 def ts(t): return f"0:{int(t // 60):02d}:{t % 60:05.2f}"
 pop = "{\\fscx85\\fscy85\\t(0,120,\\fscx103\\fscy103)\\t(120,200,\\fscx100\\fscy100)}"
 hdr = f"""[Script Info]
@@ -75,5 +104,5 @@ Style: Cap,Poppins,{a.size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,-1,0,0,0
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 """
 open(a.out, "w").write(hdr + "\n".join(
-    f"Dialogue: 0,{ts(s)},{ts(max(s + 0.3, e - 0.02))},Cap,,0,0,0,,{pop}{hl(c)}" for s, e, c in caps) + "\n")
+    f"Dialogue: 0,{ts(s)},{ts(max(s + 0.3, e - 0.02))},Cap,,0,0,0,,{pop}{fin(c)}" for s, e, c in caps) + "\n")
 print(f"wrote {len(caps)} caption lines to {a.out}")

@@ -32,7 +32,9 @@ After the answers, work through the rest without further check-ins, unless somet
 3. **Rotate themes:** don't reuse the previous reel's theme. Respect every colour the user bans.
 4. **No fabricated screenshots:** never recreate a real tweet or post UI. Use the user's real screenshots, or clearly designed quote cards (name, handle, date, exact quote, "Posted on X").
 5. **Show a preview grid** of frames from every scene before the full render. Check frames from the final exported file before delivering.
-6. **Verify facts** in news roundups against sources for the date window. Flag vendor-run benchmarks and anything outside the window.
+6. **Never leave a single word alone on a line**, in titles, cards or captions. Either fit the text on one line, or split it into two balanced lines with at least 2 words each (e.g. "How Connection Pooling" / "works in PostgreSQL", not "How" / "Connection Pooling" / "works in PostgreSQL").
+7. **Brand icons:** for a technology's logo (e.g. the PostgreSQL elephant), ask the user for the official image file and use it as is. Until it arrives, use a plain text badge; never redraw a logo by hand.
+8. **Verify facts** in news roundups against sources for the date window. Flag vendor-run benchmarks and anything outside the window.
 
 ## Workflow
 
@@ -77,7 +79,7 @@ Keep on-screen text short. The diagram explains; the captions carry the words.
 |---|---|---|---|---|
 | Dark graph paper | #080A0D | #181D24 / #242B34 | #F0F3F6 | orange #FF9F1C, teal #2EC4B6, red #EF4444, green #22C55E, blue #3B82F6, yellow #FACC15 |
 | Cream graph paper | #F6F2E9 | #E2DCCE / #D2CABA | ink #1B2430 | teal #0C8C7C, orange #E87700, red #D63031, green #2B8A3E, blue #1C6EC4, highlighter #FFD43B |
-| Blueprint | #0E3A5C | #1D4E75 / #2A6190 | #EAF2FA | amber #FFB703, cyan #4CC9F0, coral #FF6B6B, lime #95D5B2 |
+| Blueprint (dark blue) | #0E3A5C | #1D4E75 / #2A6190 | #EAF2FA | amber #FFB703, cyan #4CC9F0, coral #FF6B6B, lime #95D5B2 (used for Connection Pooling) |
 | Chalkboard | #1F3A2E | #2B4A3C | chalk #EDEDE4 | yellow #FFD166, coral #EF8354, sky #8ECAE6 |
 | Newsprint | #EFE9DD | dotted #D9D0BF | #222222 | red #C0392B, navy #1D3557, mustard #E9A23B |
 

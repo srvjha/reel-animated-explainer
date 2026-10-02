@@ -1,0 +1,10 @@
+{
+  "name": "theme-yellow-ticker",
+  "version": "1.0.0",
+  "description": "Reel theme: yellow dotted card with swipe-in scenes and a one-line ticker caption bar.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "instagram", "captions"]
+}

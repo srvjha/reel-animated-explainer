@@ -1,9 +1,13 @@
 ---
-name: reel-animated-explainer
-description: Edit vertical talking-head reels into animated explainers, either a split layout (diagram panel over an empty black top) or full screen (speaker cut out over a designed background with clips, word-by-word captions and music). Use when someone uploads a reel video to edit.
+name: reel-classic
+description: The original Python reel pipeline with two modes, split panel (diagram panel over an empty black top) and full screen (speaker cut out over a designed background with clips and music). Use when the user asks for the classic pipeline, split-panel mode or a background-removed full-screen edit; otherwise prefer reel-studio.
 ---
 
-# Reel Animated Explainer
+# Reel Classic (Python pipeline)
+
+The original pipeline: frames drawn with Pillow/NumPy and composited with FFmpeg. For the Remotion engine with swappable themes, use the `reel-studio` plugin instead.
+
+All paths below are relative to `${CLAUDE_SKILL_DIR}`.
 
 Turns a vertical talking-head video (1080x1920) into a polished reel. Two modes, picked from the video itself:
 

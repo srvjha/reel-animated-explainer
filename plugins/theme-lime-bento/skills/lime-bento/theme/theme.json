@@ -1,0 +1,5 @@
+{
+  "name": "lime-bento",
+  "npm": ["@fontsource/unbounded@^5", "@fontsource/bricolage-grotesque@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

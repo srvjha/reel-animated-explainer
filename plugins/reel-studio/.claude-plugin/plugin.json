@@ -1,0 +1,10 @@
+{
+  "name": "reel-studio",
+  "version": "1.0.0",
+  "description": "Edit talking-head reels into animated explainers with Remotion: transcription, word-timed captions, scene planning, music and SFX, Instagram-ready export.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "instagram", "captions"]
+}

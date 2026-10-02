@@ -1,0 +1,10 @@
+{
+  "name": "reel-classic",
+  "version": "1.0.0",
+  "description": "Original Python reel pipeline: split-panel and full-screen modes.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "instagram", "captions"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "theme-cream-passport",
+  "version": "1.0.0",
+  "description": "Reel theme: cream paper documents, rubber stamps and mustard keyword pills.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "instagram", "captions"]
+}

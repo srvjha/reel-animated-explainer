@@ -1,0 +1,5 @@
+{
+  "name": "yellow-ticker",
+  "npm": ["@fontsource/syne@^5", "@fontsource/sora@^5", "@fontsource/dm-mono@^5"],
+  "captions": {"maxc": 22, "lines": 1}
+}

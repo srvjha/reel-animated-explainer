@@ -1,0 +1,5 @@
+{
+  "name": "cream-passport",
+  "npm": ["@fontsource/dm-serif-display@^5", "@fontsource/ibm-plex-mono@^5", "@fontsource/manrope@^5"],
+  "captions": {"maxc": 22, "lines": 2}
+}

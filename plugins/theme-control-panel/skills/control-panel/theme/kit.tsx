@@ -186,7 +186,7 @@ const Nameplate: React.FC<{cfg: Config; full: number}> = ({cfg, full}) => {
 const Speaker: React.FC<{cfg: Config}> = ({cfg}) => {
   const t = useT(); const m = 1 - fullAmt(t, cfg); const trip = tripAmt(t, cfg);
   const x = lerp(0, WIN.x, m), y = lerp(0, WIN.y, m), w = lerp(1080, WIN.w, m), h = lerp(1920, WIN.h, m);
-  const vy = lerp(0, 25, m);                             // windowed: whole video sits 60px lower, cropped by the window
+  const vy = lerp(0, -30, m);                            // windowed: show source y ~230..940 (head to mic), trims the wall above
   const z = 1 + 0.035 * clamp(t / 10) * (1 - m);
   const sh = trip > 0 ? Math.sin(t * 90) * 10 * trip : 0;
   return <div style={{position: 'absolute', left: x + sh, top: y, width: w, height: h, overflow: 'hidden', borderRadius: 22 * m, border: m > 0.02 ? `${12 * m}px solid ${INK}` : undefined, boxShadow: m > 0.02 ? `0 ${10 * m}px 0 rgba(23,24,26,.9)` : undefined}}>

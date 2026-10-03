@@ -1,12 +1,40 @@
 {
   "name": "reel-animated-explainer",
   "description": "Turn a raw talking-head video into an animated explainer reel with Claude Code and Remotion. Core engine plus swappable theme plugins.",
-  "owner": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "owner": {
+    "name": "Saurav Jha",
+    "url": "https://srvjha.in"
+  },
   "plugins": [
-    {"name": "reel-studio", "source": "./plugins/reel-studio", "description": "Core engine: transcribe, time captions to speech, plan scenes, render with Remotion, mix music and SFX. Needs at least one theme plugin."},
-    {"name": "theme-yellow-ticker", "source": "./plugins/theme-yellow-ticker", "description": "Theme: speaker full screen, yellow dotted card with swipe-in scenes, one-line ticker captions, split-flap boards."},
-    {"name": "theme-lime-bento", "source": "./plugins/theme-lime-bento", "description": "Theme: dark grid, lime accents, speaker slides into a bento tile, can split into labelled strips, karaoke captions."},
-    {"name": "theme-cream-passport", "source": "./plugins/theme-cream-passport", "description": "Theme: cream paper, navy and red ink, rubber stamps, speaker shrinks into a framed card, mustard keyword pills."},
-    {"name": "reel-classic", "source": "./plugins/reel-classic", "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."}
+    {
+      "name": "reel-studio",
+      "source": "./plugins/reel-studio",
+      "description": "Core engine: transcribe, time captions to speech, plan scenes, render with Remotion, mix music and SFX. Needs at least one theme plugin."
+    },
+    {
+      "name": "theme-yellow-ticker",
+      "source": "./plugins/theme-yellow-ticker",
+      "description": "Theme: speaker full screen, yellow dotted card with swipe-in scenes, one-line ticker captions, split-flap boards."
+    },
+    {
+      "name": "theme-lime-bento",
+      "source": "./plugins/theme-lime-bento",
+      "description": "Theme: dark grid, lime accents, speaker slides into a bento tile, can split into labelled strips, karaoke captions."
+    },
+    {
+      "name": "theme-cream-passport",
+      "source": "./plugins/theme-cream-passport",
+      "description": "Theme: cream paper, navy and red ink, rubber stamps, speaker shrinks into a framed card, mustard keyword pills."
+    },
+    {
+      "name": "theme-control-panel",
+      "source": "./plugins/theme-control-panel",
+      "description": "Theme: industrial control panel, speaker in a camera window, schematic board, label-maker captions, breaker switches and trip flashes."
+    },
+    {
+      "name": "reel-classic",
+      "source": "./plugins/reel-classic",
+      "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."
+    }
   ]
 }

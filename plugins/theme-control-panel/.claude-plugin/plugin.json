@@ -1,0 +1,10 @@
+{
+  "name": "theme-control-panel",
+  "version": "1.0.0",
+  "description": "Reel theme: industrial control panel with a camera window, schematic board, label-maker captions and breaker switches.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "instagram", "captions"]
+}

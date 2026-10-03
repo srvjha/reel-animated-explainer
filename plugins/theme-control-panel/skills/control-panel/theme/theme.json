@@ -1,0 +1,5 @@
+{
+  "name": "control-panel",
+  "npm": ["@fontsource/archivo-black@^5", "@fontsource/barlow-condensed@^5", "@fontsource/space-mono@^5"],
+  "captions": {"maxc": 20, "lines": 2}
+}

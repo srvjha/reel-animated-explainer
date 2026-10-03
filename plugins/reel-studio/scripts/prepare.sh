@@ -7,8 +7,14 @@ IN="$1"; WD="$2"; THEME="$3"
 HERE="$(cd "$(dirname "$0")" && pwd)"; TPL="$HERE/../engine/template"
 [ -f "$THEME/kit.tsx" ] || { echo "theme dir must contain kit.tsx: $THEME"; exit 1; }
 mkdir -p "$WD"; cd "$WD"
-ffmpeg -v error -y -i "$IN" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30" \
-  -c:v libx264 -crf 16 -preset fast -pix_fmt yuv420p -c:a aac -b:a 192k -ar 48000 src.mp4
+# already 1080x1920 @30fps H.264? copy it (re-encoding a 2 min reel costs minutes on small machines)
+PROBE=$(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,r_frame_rate,codec_name -of csv=p=0 "$IN")
+if [ "$PROBE" = "h264,1080,1920,30/1" ]; then
+  ffmpeg -v error -y -i "$IN" -c copy -movflags +faststart src.mp4
+else
+  ffmpeg -v error -y -i "$IN" -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30" \
+    -c:v libx264 -crf 16 -preset fast -pix_fmt yuv420p -c:a aac -b:a 192k -ar 48000 src.mp4
+fi
 ffmpeg -v error -y -i src.mp4 -vn -ac 1 -ar 16000 audio16k.wav
 mkdir -p rem
 cp -r "$TPL"/. rem/

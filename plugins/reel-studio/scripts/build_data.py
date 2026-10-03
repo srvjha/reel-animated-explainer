@@ -33,18 +33,24 @@ for w in words:
     cur.append(w)
     if re.search(r'[.?!:]$', w['w']) and not re.fullmatch(r'[\d.]+', w['w'].rstrip('.?!:')): sents.append(cur); cur = []
 if cur: sents.append(cur)
-lines = []
-for s in sents:
+lines = []   # (sentence index, [words])
+for si, s in enumerate(sents):
     ln = []
     for w in s:
-        if ln and L(ln + [w]) > MAXC: lines.append(ln); ln = []
+        if ln and L(ln + [w]) > MAXC: lines.append((si, ln)); ln = []
         ln.append(w)
-    if ln:
-        if len(ln) == 1 and lines and lines[-1] and lines[-1][-1] in s:      # orphan: steal a word or merge
-            prev = lines[-1]
-            if len(prev) >= 3: ln.insert(0, prev.pop())
-            else: prev.extend(ln); ln = []
-        if ln: lines.append(ln)
+    if ln: lines.append((si, ln))
+# no single word alone on a line: borrow a word from the line before, or merge
+i = 0
+while i < len(lines):
+    si, ln = lines[i]
+    if len(ln) == 1 and len(lines) > 1:
+        prev = lines[i - 1] if i > 0 else None; nxt = lines[i + 1] if i + 1 < len(lines) else None
+        if prev and prev[0] == si and len(prev[1]) >= 3: ln.insert(0, prev[1].pop())
+        elif prev and (prev[0] == si or L(prev[1] + ln) <= MAXC + 6) and L(prev[1] + ln) <= MAXC + 8: prev[1].extend(ln); lines.pop(i); continue
+        elif nxt: nxt[1][:0] = ln; lines.pop(i); continue
+    i += 1
+lines = [ln for _, ln in lines]
 pages, pg = [], []
 for ln in lines:
     sent_end = re.search(r'[.?!:]$', pg[-1][-1]['w']) if pg else False

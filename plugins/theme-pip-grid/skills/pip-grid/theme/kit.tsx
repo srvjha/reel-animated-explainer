@@ -25,6 +25,7 @@ export type Config = {
   icon?: string;                         // file in public/ shown left of the title (official logo, never redrawn)
   pip: {cx: number; cy: number; r: number};  // source-video circle to show in the bubble (face + mic)
   pipFocus?: [number, number][];         // windows where the bubble grows (hook, punchlines)
+  full?: [number, number][];             // windows where the speaker fills the whole frame (e.g. the opening hook)
   overlays?: React.FC[];
 };
 
@@ -160,18 +161,25 @@ const TitleBar: React.FC<{cfg: Config}> = ({cfg}) => {
 
 const focusAmt = (t: number, cfg: Config) => { let d = 0; for (const [a, b] of cfg.pipFocus || []) d = Math.max(d, (a <= 0.01 ? 1 : ease(t, a - 0.2, 0.45)) * (1 - ease(t, b - 0.2, 0.45))); return d; };
 
-/** round PiP bubble with a gradient story ring; grows during pipFocus windows */
+const fullAmt = (t: number, cfg: Config) => { let d = 0; for (const [a, b] of cfg.full || []) d = Math.max(d, (a <= 0.01 ? 1 : ease(t, a - 0.25, 0.5)) * (1 - Easing.inOut(Easing.cubic)(clamp((t - b + 0.3) / 0.6)))); return d; };
+
+/** round PiP bubble with a gradient story ring; grows during pipFocus windows, morphs to full frame during `full` */
 const Pip: React.FC<{cfg: Config}> = ({cfg}) => {
-  const t = useT(); const k = Easing.inOut(Easing.cubic)(focusAmt(t, cfg));
+  const t = useT(); const k = Easing.inOut(Easing.cubic)(focusAmt(t, cfg)); const F = fullAmt(t, cfg);
   const D = lerp(300, 620, k); const cx = lerp(880, 540, k), cy = lerp(330, 760, k);
   const {cx: sx, cy: sy, r} = cfg.pip; const s = (D / 2) / r;
-  const ring = 9, gap = 6;
-  return <div style={{position: 'absolute', left: cx - D / 2 - ring - gap, top: cy - D / 2 - ring - gap, width: D + 2 * (ring + gap), height: D + 2 * (ring + gap), borderRadius: '50%', background: `conic-gradient(from ${t * 40}deg, ${YELLOW}, ${ORANGE}, ${PINK}, ${ORANGE}, ${YELLOW})`, padding: ring, boxShadow: '0 20px 60px rgba(0,0,0,.7)'}}>
-    <div style={{width: '100%', height: '100%', borderRadius: '50%', background: BG, padding: gap}}>
-      <div style={{width: D, height: D, borderRadius: '50%', overflow: 'hidden', position: 'relative'}}>
-        <div style={{position: 'absolute', left: D / 2 - sx * s, top: D / 2 - sy * s, width: 1080 * s, height: 1920 * s}}>
+  const ring = 9 * (1 - F), gap = 6 * (1 - F);
+  // bubble rect -> full frame rect
+  const bx = cx - D / 2, by = cy - D / 2;
+  const x = lerp(bx, 0, F), y = lerp(by, 0, F), w = lerp(D, 1080, F), h = lerp(D, 1920, F);
+  const vs = lerp(s, 1, F), vx = lerp(D / 2 - sx * s, 0, F), vy = lerp(D / 2 - sy * s, 0, F);
+  return <div style={{position: 'absolute', left: x - ring - gap, top: y - ring - gap, width: w + 2 * (ring + gap), height: h + 2 * (ring + gap), borderRadius: lerp(D, 0, F), background: F > 0.98 ? 'transparent' : `conic-gradient(from ${t * 40}deg, ${YELLOW}, ${ORANGE}, ${PINK}, ${ORANGE}, ${YELLOW})`, padding: ring, boxShadow: F > 0.98 ? undefined : '0 20px 60px rgba(0,0,0,.7)'}}>
+    <div style={{width: '100%', height: '100%', borderRadius: lerp(D, 0, F), background: BG, padding: gap}}>
+      <div style={{width: w, height: h, borderRadius: lerp(D / 2, 0, F), overflow: 'hidden', position: 'relative'}}>
+        <div style={{position: 'absolute', left: vx, top: vy, width: 1080 * vs, height: 1920 * vs}}>
           <OffthreadVideo src={staticFile('src.mp4')} muted style={{width: '100%', height: '100%'}} />
         </div>
+        {F > 0.01 && <div style={{position: 'absolute', inset: 0, opacity: F, background: 'linear-gradient(rgba(0,0,0,.55), transparent 16%, transparent 70%, rgba(0,0,0,.6))'}} />}
       </div>
     </div>
   </div>;
@@ -208,7 +216,7 @@ const Captions: React.FC<{data: Data}> = ({data}) => {
   const f = useCurrentFrame(); const t = f / FPS;
   const pg = data.pages.find(p => t >= p.s && t < p.e); if (!pg) return null;
   return <div style={{position: 'absolute', left: 30, right: 30, top: 1490, textAlign: 'center'}}>
-    {pg.lines.map((ln, i) => <div key={i} style={{fontFamily: SANS, fontWeight: 800, fontSize: 58, lineHeight: 1.25, whiteSpace: 'nowrap'}}>
+    {pg.lines.map((ln, i) => <div key={i} style={{fontFamily: SANS, fontWeight: 800, fontSize: 58, lineHeight: 1.25, whiteSpace: 'nowrap', filter: 'drop-shadow(0 3px 6px rgba(0,0,0,.9))'}}>
       {ln.map((w, j) => {
         const shown = t >= w.t - 0.03; const active = shown && t < w.e - 0.03; const p = shown ? pop(f, w.t - 0.03) : 0;
         const wipe = clamp((t - w.t + 0.03) / Math.max(0.12, Math.min(0.5, w.e - w.t)));
@@ -225,9 +233,9 @@ export const Frame: React.FC<{data: Data; cfg: Config; scenes: Scene[]}> = ({dat
   <AbsoluteFill style={{background: BG}}>
     <Grid />
     <Stage scenes={scenes} />
-    <TitleBar cfg={cfg} />
     {(cfg.overlays || []).map((O, i) => <O key={i} />)}
     <Pip cfg={cfg} />
+    <TitleBar cfg={cfg} />
     <Captions data={data} />
   </AbsoluteFill>
 );

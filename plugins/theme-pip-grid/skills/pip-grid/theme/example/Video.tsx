@@ -254,5 +254,6 @@ export const cfg: Config = {
   title: 'How Instagram uploads large files',
   icon: 'instagram.png',
   pip: {cx: 530, cy: 560, r: 400},
-  pipFocus: [[0, 2.4], [109.5, 999]],
+  full: [[0, 2.4]],
+  pipFocus: [[109.5, 999]],
 };

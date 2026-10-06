@@ -1,0 +1,10 @@
+{
+  "name": "theme-pip-grid",
+  "version": "1.0.0",
+  "description": "Reel theme: black grid, full-frame diagrams, the speaker in a round picture-in-picture bubble, gradient-wipe captions.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "instagram", "captions"]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "pip-grid",
+  "npm": ["@fontsource/space-grotesk@^5", "@fontsource/geist-sans@^5", "@fontsource/geist-mono@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

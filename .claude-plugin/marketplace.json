@@ -32,6 +32,11 @@
       "description": "Theme: industrial control panel, speaker in a camera window, schematic board, label-maker captions, breaker switches and trip flashes."
     },
     {
+      "name": "theme-pip-grid",
+      "source": "./plugins/theme-pip-grid",
+      "description": "Theme: black grid, full-frame diagrams, speaker in a round picture-in-picture bubble, gradient-wipe captions."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

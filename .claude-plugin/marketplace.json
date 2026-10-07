@@ -42,6 +42,11 @@
       "description": "Theme: butter-yellow grid, light code editor with typed snippets, background-removed speaker sticker, highlighter captions."
     },
     {
+      "name": "theme-launch-promo",
+      "source": "./plugins/theme-launch-promo",
+      "description": "Theme: product promo reels, talking head plus real screen recordings with zoom, pan and speed-up, brand reveal and comment CTA."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

@@ -16,6 +16,7 @@ Built while editing the **Building Backend Systems** series.
 | **control-panel** | Industrial panel, speaker in a camera window, schematic board, label-maker captions, breaker switches and trip flashes |
 | **pip-grid** | Black grid, diagrams fill the frame, speaker in a round picture-in-picture bubble, gradient-wipe captions |
 | **editor-light** | Butter-yellow grid, light code editor with typed snippets, background-removed speaker sticker, highlighter captions |
+| **launch-promo** | Product promos: talking head plus real screen recordings with zoom, pan and speed-up, brand reveal, comment CTA |
 
 <p align="center"><img src="demo/theme-yellow-ticker.jpg" width="720" alt="yellow-ticker theme frames"></p>
 <p align="center"><img src="demo/theme-lime-bento.jpg" width="720" alt="lime-bento theme frames"></p>
@@ -23,6 +24,7 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-control-panel.jpg" width="720" alt="control-panel theme frames"></p>
 <p align="center"><img src="demo/theme-pip-grid.jpg" width="720" alt="pip-grid theme frames"></p>
 <p align="center"><img src="demo/theme-editor-light.jpg" width="720" alt="editor-light theme frames"></p>
+<p align="center"><img src="demo/theme-launch-promo.jpg" width="720" alt="launch-promo theme frames"></p>
 
 ## Install
 
@@ -34,7 +36,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

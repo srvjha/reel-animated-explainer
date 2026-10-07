@@ -1,0 +1,10 @@
+{
+  "name": "theme-launch-promo",
+  "version": "1.0.0",
+  "description": "Reel theme for product promos: talking-head problem and solution, real screen recordings cut in with a virtual camera (zoom, pan, speed-up), brand reveal and comment CTA.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "promo", "product", "screen recording"]
+}

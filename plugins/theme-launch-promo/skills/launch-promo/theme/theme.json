@@ -1,0 +1,5 @@
+{
+  "name": "launch-promo",
+  "npm": ["@fontsource/source-serif-4@^5", "@fontsource/plus-jakarta-sans@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

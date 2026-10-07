@@ -142,6 +142,6 @@ const CtaGate: React.FC = () => { const t = useT(); return t > 41.4 && (t < 43.3
 export const cfg: Config = {
   brand: {name: 'Shortlist', color: TEAL, tag: 'AI resume builder', url: 'shortlist.co.in'},
   modes: [{a: 0, b: 3.7, m: 'talk'}, {a: 3.7, b: 15.0, m: 'card'}, {a: 15.0, b: 17.2, m: 'talk'}, {a: 17.2, b: 41.6, m: 'card'}, {a: 41.6, b: 43.2, m: 'talk'}, {a: 43.2, b: 49.9, m: 'card'}, {a: 49.9, b: 999, m: 'talk'}],
-  face: {y0: 720, y1: 1330},
+  face: {y0: 600, y1: 1290},
   overlays: [Hook, Reveal, CtaGate],
 };

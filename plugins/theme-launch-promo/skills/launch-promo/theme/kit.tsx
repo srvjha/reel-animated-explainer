@@ -17,8 +17,8 @@ export const CREAM = '#EEF0EA', CREAM2 = '#F7F8F4', INK = '#1C1F1E', SUB = '#6A6
 export const RED = '#D64545', AMBER = '#E0A100', GREEN = '#1E8E5A';
 export const SERIF = 'Source Serif 4', SANS = 'Plus Jakarta Sans', MONO = 'JetBrains Mono';
 export const pop = (f: number, t0: number) => springAt(f, t0, {damping: 14, stiffness: 190, mass: 0.7});
-/** card scene box (px) */
-export const CARD_W = 1000, CARD_H = 960;
+/** card scene box (px); scenes draw in CARD_W x (CARD_H - 60) under the browser bar */
+export const CARD_W = 1000, CARD_H = 900;
 
 export type Config = {
   brand: {name: string; color: string; tag?: string; url?: string};   // wordmark text, accent colour, small tag, URL in the browser bar
@@ -133,7 +133,7 @@ const Card: React.FC<{cfg: Config; scenes: Scene[]; k: number}> = ({cfg, scenes,
 const Speaker: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => {
   // full screen -> rounded window (y 1300..1880) showing the face rows cfg.face
   const {y0, y1} = cfg.face; const fh = y1 - y0;
-  const W1 = 1000, H1 = 560, X1 = 40, Y1 = 1320;
+  const W1 = 1000, H1 = 640, X1 = 40, Y1 = 1245;
   const s1 = Math.max(W1 / 1080, H1 / fh);      // scale so the face band fills the window
   const x = lerp(0, X1, k), y = lerp(0, Y1, k), w = lerp(1080, W1, k), h = lerp(1920, H1, k);
   const s = lerp(1, s1, k);
@@ -150,7 +150,7 @@ const Speaker: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => {
 const Captions: React.FC<{data: Data; cfg: Config; k: number}> = ({data, cfg, k}) => {
   const f = useCurrentFrame(); const t = f / FPS;
   const pg = data.pages.find(p => t >= p.s && t < p.e); if (!pg) return null;
-  const top = lerp(1380, 1128, k); const dark = k > 0.5;
+  const top = lerp(1380, 1068, k); const dark = k > 0.5;
   return <div style={{position: 'absolute', left: 20, right: 20, top, textAlign: 'center'}}>
     {pg.lines.map((ln, i) => <div key={i} style={{fontFamily: SANS, fontWeight: 800, fontSize: lerp(62, 48, k), lineHeight: 1.22, whiteSpace: 'nowrap'}}>
       {ln.map((w, j) => {

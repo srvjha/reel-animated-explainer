@@ -20,7 +20,7 @@ Pass `THEME_DIR` to reel-studio's `prepare.sh`. The full reference reel is `them
 5. Add a `Step n text` label to each demo scene so the feature is named.
 
 ## Layout
-- `cfg.modes`: `talk` (speaker full screen, captions low, overlays) and `card` (canvas + browser card 1000 x 960 at y 150 with **scenes in 1000 x 900**, captions on the cream band at y ~1128, speaker window y 1320 to 1880).
+- `cfg.modes`: `talk` (speaker full screen, captions low, overlays) and `card` (canvas + browser card 1000 x 900 at y 150 with **scenes in 1000 x 840**, captions on the cream band at y ~1068, speaker window y 1245 to 1885, tall enough for head to mic).
 - `cfg.face`: source rows of the speaker shown in the window (face plus mic). Check a still; faces sit lower in the frame than you expect.
 - Overlays: hook pill + rejected-resume style prop, brand reveal card, CTA (wordmark, comment keyword box, bonus pill under the captions). Keep overlays off the face (talk-mode head is about y 500 to 1100).
 

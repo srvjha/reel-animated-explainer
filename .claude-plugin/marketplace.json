@@ -37,6 +37,11 @@
       "description": "Theme: black grid, full-frame diagrams, speaker in a round picture-in-picture bubble, gradient-wipe captions."
     },
     {
+      "name": "theme-editor-light",
+      "source": "./plugins/theme-editor-light",
+      "description": "Theme: butter-yellow grid, light code editor with typed snippets, background-removed speaker sticker, highlighter captions."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

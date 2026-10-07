@@ -1,0 +1,5 @@
+{
+  "name": "editor-light",
+  "npm": ["@fontsource/instrument-sans@^5", "@fontsource/instrument-serif@^5", "@fontsource/outfit@^5", "@fontsource/fira-code@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

@@ -15,12 +15,14 @@ Built while editing the **Building Backend Systems** series.
 | **cream-passport** | Cream paper, navy and red ink, rubber stamps and ID cards, speaker in a framed card, mustard keyword pills |
 | **control-panel** | Industrial panel, speaker in a camera window, schematic board, label-maker captions, breaker switches and trip flashes |
 | **pip-grid** | Black grid, diagrams fill the frame, speaker in a round picture-in-picture bubble, gradient-wipe captions |
+| **editor-light** | Butter-yellow grid, light code editor with typed snippets, background-removed speaker sticker, highlighter captions |
 
 <p align="center"><img src="demo/theme-yellow-ticker.jpg" width="720" alt="yellow-ticker theme frames"></p>
 <p align="center"><img src="demo/theme-lime-bento.jpg" width="720" alt="lime-bento theme frames"></p>
 <p align="center"><img src="demo/theme-cream-passport.jpg" width="720" alt="cream-passport theme frames"></p>
 <p align="center"><img src="demo/theme-control-panel.jpg" width="720" alt="control-panel theme frames"></p>
 <p align="center"><img src="demo/theme-pip-grid.jpg" width="720" alt="pip-grid theme frames"></p>
+<p align="center"><img src="demo/theme-editor-light.jpg" width="720" alt="editor-light theme frames"></p>
 
 ## Install
 
@@ -32,7 +34,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

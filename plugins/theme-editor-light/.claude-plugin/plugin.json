@@ -1,0 +1,10 @@
+{
+  "name": "theme-editor-light",
+  "version": "1.0.0",
+  "description": "Reel theme: butter-yellow graph paper, light code-editor windows with typed code, a background-removed speaker sticker, highlighter captions.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "instagram", "captions", "code"]
+}

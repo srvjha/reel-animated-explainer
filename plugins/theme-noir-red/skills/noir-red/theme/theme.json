@@ -1,0 +1,5 @@
+{
+  "name": "noir-red",
+  "npm": ["@fontsource/bebas-neue@^5", "@fontsource/inter-tight@^5", "@fontsource/roboto-mono@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

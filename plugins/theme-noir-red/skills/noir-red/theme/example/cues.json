@@ -1,0 +1,284 @@
+[
+ {
+  "sfx": "hit",
+  "t": 0.05,
+  "db": -16
+ },
+ {
+  "sfx": "riser",
+  "t": 0.2,
+  "db": -26
+ },
+ {
+  "sfx": "whoosh",
+  "t": 8.75,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 19.55,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 93.55,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 13.75,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 89.75,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 173.15,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 33.5,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 50.9,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 59.4,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 73.30000000000001,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 113.80000000000001,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 131.3,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 148.70000000000002,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 161.0,
+  "db": -22
+ },
+ {
+  "sfx": "glitch",
+  "t": "fail",
+  "db": -17
+ },
+ {
+  "sfx": "error",
+  "t": "fail+0.05",
+  "db": -22
+ },
+ {
+  "sfx": "hit",
+  "t": "zuul",
+  "db": -20
+ },
+ {
+  "sfx": "hit",
+  "t": "evcache",
+  "db": -20
+ },
+ {
+  "sfx": "hit",
+  "t": "cassandra",
+  "db": -20
+ },
+ {
+  "sfx": "hit",
+  "t": "openconnect",
+  "db": -20
+ },
+ {
+  "sfx": "hit",
+  "t": "close",
+  "db": -20
+ },
+ {
+  "sfx": "hit",
+  "t": "micro",
+  "db": -20
+ },
+ {
+  "sfx": "hit",
+  "t": "arch",
+  "db": -20
+ },
+ {
+  "sfx": "blip",
+  "t": "routing",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "auth",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "shed",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "search",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "recs",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "play",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "memcached",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "isps",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "deploy",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "popular",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "release",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "cb",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "ls",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "mr",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "ce",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "l1",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "l2",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "l3",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "l4",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "l5",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "l6",
+  "db": -24
+ },
+ {
+  "sfx": "glitch",
+  "t": "database",
+  "db": -19
+ },
+ {
+  "sfx": "error",
+  "t": "sfail",
+  "db": -24
+ },
+ {
+  "sfx": "error",
+  "t": "srvfail",
+  "db": -24
+ },
+ {
+  "sfx": "error",
+  "t": "netfail",
+  "db": -24
+ },
+ {
+  "sfx": "tick",
+  "t": "random",
+  "db": -26,
+  "repeat": 10,
+  "every": 0.12
+ },
+ {
+  "sfx": "glitch",
+  "t": "down",
+  "db": -16
+ },
+ {
+  "sfx": "hit",
+  "t": "down",
+  "db": -20
+ },
+ {
+  "sfx": "blip",
+  "t": "perform",
+  "db": -20
+ },
+ {
+  "sfx": "riser",
+  "t": "high-1.2",
+  "db": -26
+ },
+ {
+  "sfx": "hit",
+  "t": "end",
+  "db": -18
+ }
+]

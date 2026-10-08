@@ -47,6 +47,11 @@
       "description": "Theme: product promo reels, talking head plus real screen recordings with zoom, pan and speed-up, brand reveal and comment CTA."
     },
     {
+      "name": "theme-noir-red",
+      "source": "./plugins/theme-noir-red",
+      "description": "Theme: cinematic black and red, full-screen intro, icon-driven system-design diagrams on a glowing card, speaker window framed hair to mic."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

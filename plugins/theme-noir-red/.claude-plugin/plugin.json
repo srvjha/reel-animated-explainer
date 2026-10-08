@@ -1,0 +1,10 @@
+{
+  "name": "theme-noir-red",
+  "version": "1.0.0",
+  "description": "Reel theme: cinematic black and red. Speaker full screen for the intro and punchlines, then a glowing black card with icon-driven diagrams above a speaker window framed from hair to mic.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "system design", "dark", "icons"]
+}

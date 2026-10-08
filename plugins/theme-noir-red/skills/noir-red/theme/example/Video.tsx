@@ -3,7 +3,7 @@
 import React from 'react';
 import {Img, staticFile} from 'remotion';
 import {Scene, clamp, lerp, ease, useT, Shake} from './core';
-import {Config, Appear, Tag, Heading, Flow, Meter, Icon, Node, BLACK, PANEL2, LINE, WHITE, GREY, RED, DEEP, GREEN, AMBER, DISPLAY, SANS, MONO} from './theme/kit';
+import {Config, Appear, Tag, Heading, Flow, Meter, Icon, Node, BLACK, PANEL2, LINE, FULL_H, WHITE, GREY, RED, DEEP, GREEN, AMBER, DISPLAY, SANS, MONO} from './theme/kit';
 import data from './data.json';
 
 const T = data.T as Record<string, number>;
@@ -232,6 +232,50 @@ const S8: React.FC = () => {
   </>;
 };
 
+
+// ------------------------------------------------------------------ 08b full screen: request -> nearest Open Connect server (speaker hidden)
+const OCB = [{x: 60, y: 300, d: 'far'}, {x: 760, y: 420, d: 'far'}, {x: 480, y: 1100, d: 'nearest'}];
+const S8b: React.FC = () => {
+  const t = useT(); const ux = 330, uy = 860; const pick = t > T.close; const geo = t > T.geo;
+  const pulse = t > T.play2 ? 1 + 0.08 * Math.sin((t - T.play2) * 9) * Math.exp(-(t - T.play2) * 1.2) : 1;
+  return <>
+    <Heading t0={119.35} kicker="STEP 5 · OPEN CONNECT" title={geo ? 'NEAREST SERVER WINS' : 'STRAIGHT TO THE CDN'} />
+    <div style={{position: 'absolute', inset: 0, backgroundImage: `linear-gradient(${LINE}55 1px, transparent 1px), linear-gradient(90deg, ${LINE}55 1px, transparent 1px)`, backgroundSize: '100px 100px', opacity: 0.5}} />
+    {/* origin is skipped */}
+    <Appear t0={119.5} from="down" style={{left: 400, top: 160}}><div style={{position: 'relative'}}><Srv icon="cloud" label="ORIGIN" sub="far away" w={210} h={130} state={t > T.req + 0.6 ? 'dim' : 'ok'} /></div></Appear>
+    {t > T.req && <svg width={1000} height={FULL_H} style={{position: 'absolute', left: 0, top: 0}}>
+      <line x1={ux} y1={uy} x2={505} y2={290} stroke={GREY} strokeWidth={3} strokeDasharray="8 10" opacity={0.5} />
+    </svg>}
+    <Appear t0={T.req + 0.6} from="scale" style={{left: 380, top: 470}}><Chip icon="circle-x" size={24}>origin skipped</Chip></Appear>
+    {/* distance rings */}
+    {geo && [0, 1, 2].map(i => { const ph = ((t - T.geo) * 0.6 + i / 3) % 1;
+      return <div key={i} style={{position: 'absolute', left: ux - 700 * ph, top: uy - 700 * ph, width: 1400 * ph, height: 1400 * ph, borderRadius: '50%', border: `3px solid ${RED}`, opacity: (1 - ph) * 0.5}} />; })}
+    {/* links to every OCA */}
+    {t > T.req + 0.3 && OCB.map((o, i) => {
+      const k = ease(t, T.req + 0.3 + i * 0.15, 0.5); const hit = pick && i === 2;
+      const cx = o.x + 105, cy = o.y + 75;
+      return <svg key={i} width={1000} height={FULL_H} style={{position: 'absolute', left: 0, top: 0, opacity: pick && !hit ? 0.2 : 1}}>
+        <line x1={ux} y1={uy} x2={lerp(ux, cx, k)} y2={lerp(uy, cy, k)} stroke={hit ? RED : GREY} strokeWidth={hit ? 8 : 3} strokeDasharray={hit ? undefined : '10 12'} />
+      </svg>;
+    })}
+    {OCB.map((o, i) => <Appear key={i} t0={119.6 + i * 0.12} from="scale" style={{left: o.x, top: o.y}}>
+      <div style={{position: 'relative'}}>
+        <Srv icon="hard-drive" label={`OPEN CONNECT ${i + 1}`} w={210} h={150} state={pick ? (i === 2 ? 'hot' : 'dim') : 'ok'} sub={geo ? o.d : 'cached titles'} />
+        <div style={{position: 'absolute', right: -14, top: -14, display: 'flex', gap: 4}}>{[WHITE, RED].map((c, j) => <div key={j} style={{width: 34, height: 34, borderRadius: 8, background: c, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><Icon name="clapperboard" size={22} color={j ? WHITE : BLACK} /></div>)}</div>
+      </div>
+    </Appear>)}
+    {pick && <Flow x1={560} y1={1110} x2={ux + 40} y2={uy + 60} t0={T.close + 0.1} n={6} speed={2.2} w={6} />}
+    {/* the viewer */}
+    <Appear t0={119.4} from="scale" style={{left: ux - 80, top: uy - 80}}>
+      <div style={{width: 160, height: 160, borderRadius: 80, background: RED, display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: `0 0 60px ${RED}99`, transform: `scale(${pulse})`}}><Icon name="play" size={74} color={WHITE} /></div>
+    </Appear>
+    <Appear t0={119.5} from="up" style={{left: ux - 120, top: uy + 100, width: 240, textAlign: 'center'}}><Label size={30}>YOU</Label></Appear>
+    <Appear t0={T.play2} from="scale" style={{left: ux + 100, top: uy - 40}}><Chip icon="monitor-play" size={26}>press play</Chip></Appear>
+    <Appear t0={T.geo} from="scale" style={{left: ux - 150, top: uy - 210}}><Chip icon="map-pin" size={26}>your location</Chip></Appear>
+    <Appear t0={T.close} from="up" style={{left: 0, right: 0, top: 1390, display: 'flex', justifyContent: 'center'}}><Chip icon="zap" size={30}>video from the nearest server</Chip></Appear>
+  </>;
+};
+
 // ------------------------------------------------------------------ 09 design for failure
 const S9: React.FC = () => {
   const t = useT(); const up = ease(t, T.cb - 0.2, 0.5);
@@ -348,7 +392,7 @@ export const cfg: Config = {
   logo: 'netflix.png',
   modes: [
     {a: 0, b: 9.0, m: 'talk'}, {a: 9.0, b: 14.0, m: 'card'}, {a: 14.0, b: 19.8, m: 'talk'},
-    {a: 19.8, b: 90.0, m: 'card'}, {a: 90.0, b: 93.8, m: 'talk'}, {a: 93.8, b: 173.4, m: 'card'}, {a: 173.4, b: END + 1, m: 'talk'},
+    {a: 19.8, b: 90.0, m: 'card'}, {a: 90.0, b: 93.8, m: 'talk'}, {a: 93.8, b: 119.3, m: 'card'}, {a: 119.3, b: 131.4, m: 'full'}, {a: 131.4, b: 173.4, m: 'card'}, {a: 173.4, b: END + 1, m: 'talk'},
   ],
   face: {y0: 10, y1: 930},
   overlays: [Shade, Intro, Mid, Outro],
@@ -356,6 +400,6 @@ export const cfg: Config = {
 
 export const scenes: Scene[] = [
   {a: 9.0, b: 14.0, el: S1}, {a: 19.8, b: 33.6, el: S2}, {a: 33.6, b: 51.0, el: S3}, {a: 51.0, b: 59.5, el: S4},
-  {a: 59.5, b: 73.4, el: S5}, {a: 73.4, b: 90.0, el: S6}, {a: 93.8, b: 113.9, el: S7}, {a: 113.9, b: 131.4, el: S8},
+  {a: 59.5, b: 73.4, el: S5}, {a: 73.4, b: 90.0, el: S6}, {a: 93.8, b: 113.9, el: S7}, {a: 113.9, b: 119.3, el: S8}, {a: 119.3, b: 131.4, el: S8b},
   {a: 131.4, b: 148.8, el: S9}, {a: 148.8, b: 161.1, el: S10}, {a: 161.1, b: 173.4, el: S11},
 ];

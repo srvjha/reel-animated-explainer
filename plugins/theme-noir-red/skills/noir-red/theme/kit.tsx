@@ -1,5 +1,6 @@
 // Theme: NOIR RED. Cinematic black with a single red accent (streaming-service feel).
 //   talk - the speaker full screen (intro, punchlines), title card + logo overlay
+//   full - same card stretched to 1000 x 1530, speaker window slides away (when the camera shot is unusable)
 //   card - a black "screen" card with a red glow edge plays the diagram scenes on top; the speaker
 //          sits in a tall window below framed from the top of the head to the mic (never cropped)
 // Icons: put SVGs in public/icons/ (lucide-static for generic, simple-icons for brands) and draw
@@ -19,11 +20,13 @@ export const DISPLAY = 'Bebas Neue', SANS = 'Inter Tight', MONO = 'Roboto Mono';
 export const pop = (f: number, t0: number) => springAt(f, t0, {damping: 14, stiffness: 200, mass: 0.7});
 /** scene box inside the card */
 export const CARD_W = 1000, CARD_H = 840;
+/** scene box in 'full' mode (speaker hidden, diagram takes the screen) */
+export const FULL_H = 1530;
 
 export type Config = {
   title: string;                                   // one line, shown in the intro title card and the header strip
   logo?: string;                                   // official logo in public/ (never redrawn)
-  modes: {a: number; b: number; m: 'talk' | 'card'}[];
+  modes: {a: number; b: number; m: 'talk' | 'card' | 'full'}[];   // full: diagram fills the screen, speaker hidden
   face: {y0: number; y1: number};                  // source rows (1080x1920) from hair top to mic, shown whole in card mode
   overlays?: React.FC[];
 };
@@ -89,11 +92,20 @@ export const Meter: React.FC<{v: number; w?: number; label?: string; color?: str
 );
 
 // ------------------------------------------------------------------ frame
-const cardAmt = (t: number, cfg: Config) => {
+const spansOf = (cfg: Config, ms: string[]) => {
+  const out: {a: number; b: number}[] = [];
+  for (const s of [...cfg.modes].sort((x, y) => x.a - y.a)) if (ms.includes(s.m)) {
+    const l = out[out.length - 1]; if (l && Math.abs(l.b - s.a) < 0.01) l.b = s.b; else out.push({a: s.a, b: s.b});
+  }
+  return out;
+};
+const amt = (t: number, spans: {a: number; b: number}[]) => {
   let k = 0;
-  for (const s of cfg.modes) if (s.m === 'card') k = Math.max(k, Easing.inOut(Easing.cubic)(clamp((t - s.a + 0.25) / 0.5)) * (1 - Easing.inOut(Easing.cubic)(clamp((t - s.b + 0.25) / 0.5))));
+  for (const s of spans) k = Math.max(k, Easing.inOut(Easing.cubic)(clamp((t - s.a + 0.25) / 0.5)) * (1 - Easing.inOut(Easing.cubic)(clamp((t - s.b + 0.25) / 0.5))));
   return k;
 };
+const cardAmt = (t: number, cfg: Config) => amt(t, spansOf(cfg, ['card', 'full']));
+const fullAmt = (t: number, cfg: Config) => amt(t, spansOf(cfg, ['full']));
 
 const Backdrop: React.FC<{k: number}> = ({k}) => {
   const t = useT();
@@ -111,10 +123,10 @@ const Header: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => (
   </div>
 );
 
-const Card: React.FC<{scenes: Scene[]; k: number}> = ({scenes, k}) => {
+const Card: React.FC<{scenes: Scene[]; k: number; fk: number}> = ({scenes, k, fk}) => {
   const t = useT(); if (k < 0.01) return null;
   const idx = scenes.findIndex(s => t >= s.a - 0.05 && t < s.b);
-  return <div style={{position: 'absolute', left: 40, top: 130, width: CARD_W, height: CARD_H, opacity: k, transform: `translateY(${(1 - k) * -80}px)`, background: PANEL, borderRadius: 26, border: `2px solid ${LINE}`, boxShadow: `0 0 0 1px #000, 0 0 60px ${RED}33, 0 30px 60px rgba(0,0,0,.7)`, overflow: 'hidden'}}>
+  return <div style={{position: 'absolute', left: 40, top: 130, width: CARD_W, height: lerp(CARD_H, FULL_H, fk), opacity: k, transform: `translateY(${(1 - k) * -80}px)`, background: PANEL, borderRadius: 26, border: `2px solid ${LINE}`, boxShadow: `0 0 0 1px #000, 0 0 60px ${RED}33, 0 30px 60px rgba(0,0,0,.7)`, overflow: 'hidden'}}>
     <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 4, background: `linear-gradient(90deg, transparent, ${RED}, transparent)`}} />
     <div style={{position: 'absolute', inset: 0, backgroundImage: `radial-gradient(rgba(255,255,255,.05) 1.2px, transparent 1.6px)`, backgroundSize: '28px 28px'}} />
     {scenes.map((s, i) => {
@@ -126,7 +138,7 @@ const Card: React.FC<{scenes: Scene[]; k: number}> = ({scenes, k}) => {
   </div>;
 };
 
-const Speaker: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => {
+const Speaker: React.FC<{cfg: Config; k: number; fk: number}> = ({cfg, k, fk}) => {
   // full screen -> window (x 40, y 1150, 1000 x 730), whole face band visible (letterboxed, never cropped)
   const {y0, y1} = cfg.face; const fh = y1 - y0;
   const W1 = 1000, H1 = 730, X1 = 40, Y1 = 1150;
@@ -134,7 +146,7 @@ const Speaker: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => {
   const x = lerp(0, X1, k), y = lerp(0, Y1, k), w = lerp(1080, W1, k), h = lerp(1920, H1, k);
   const s = lerp(1, s1, k);
   const vx = lerp(0, (W1 - 1080 * s1) / 2, k), vy = lerp(0, -y0 * s1, k);
-  return <div style={{position: 'absolute', left: x, top: y, width: w, height: h, borderRadius: 28 * k, overflow: 'hidden', background: BLACK, border: k > 0.02 ? `${2 * k}px solid ${LINE}` : undefined, boxShadow: k > 0.02 ? `0 0 50px ${RED}22` : undefined}}>
+  return <div style={{position: 'absolute', left: x, top: y + fk * 820, opacity: 1 - fk, width: w, height: h, borderRadius: 28 * k, overflow: 'hidden', background: BLACK, border: k > 0.02 ? `${2 * k}px solid ${LINE}` : undefined, boxShadow: k > 0.02 ? `0 0 50px ${RED}22` : undefined}}>
     <div style={{position: 'absolute', left: vx, top: vy, width: 1080 * s, height: 1920 * s}}>
       <OffthreadVideo src={staticFile('src.mp4')} muted style={{width: '100%', height: '100%'}} />
     </div>
@@ -143,10 +155,10 @@ const Speaker: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => {
 };
 
 /** subtitles: white bold with a dark outline; the spoken word turns red and lifts */
-const Captions: React.FC<{data: Data; k: number}> = ({data, k}) => {
+const Captions: React.FC<{data: Data; k: number; fk: number}> = ({data, k, fk}) => {
   const f = useCurrentFrame(); const t = f / FPS;
   const pg = data.pages.find(p => t >= p.s && t < p.e); if (!pg) return null;
-  const top = lerp(1390, 995, k);
+  const top = lerp(lerp(1390, 995, k), 1700, fk);
   return <div style={{position: 'absolute', left: 20, right: 20, top, textAlign: 'center'}}>
     {pg.lines.map((ln, i) => <div key={i} style={{fontFamily: SANS, fontWeight: 800, fontSize: lerp(64, 50, k), lineHeight: 1.2, whiteSpace: 'nowrap'}}>
       {ln.map((w, j) => {
@@ -159,13 +171,13 @@ const Captions: React.FC<{data: Data; k: number}> = ({data, k}) => {
 };
 
 export const Frame: React.FC<{data: Data; cfg: Config; scenes: Scene[]}> = ({data, cfg, scenes}) => {
-  const t = useT(); const k = cardAmt(t, cfg);
+  const t = useT(); const k = cardAmt(t, cfg); const fk = fullAmt(t, cfg);
   return <AbsoluteFill style={{background: BLACK}}>
     <Backdrop k={k} />
-    <Speaker cfg={cfg} k={k} />
-    <Card scenes={scenes} k={k} />
+    <Speaker cfg={cfg} k={k} fk={fk} />
+    <Card scenes={scenes} k={k} fk={fk} />
     <Header cfg={cfg} k={k} />
     {(cfg.overlays || []).map((O, i) => <O key={i} />)}
-    <Captions data={data} k={k} />
+    <Captions data={data} k={k} fk={fk} />
   </AbsoluteFill>;
 };

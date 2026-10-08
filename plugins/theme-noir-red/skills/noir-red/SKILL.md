@@ -23,6 +23,7 @@ Draw with `<Icon name="server" color={RED} />` (CSS mask, any colour). Brand log
 
 ## Layout
 - `cfg.modes`: `talk` (speaker full screen; put overlays in the band y 1000 to 1380, below the mic, captions sit at y 1390) and `card` (header with logo + title at y 44, card at y 130 with **scenes in 1000 x 840**, captions at y 995, speaker window x 40 y 1150, 1000 x 730).
+- `full` mode: the card stretches to **1000 x 1530** (use `FULL_H`), the speaker window slides off and captions drop to y 1700. Use it where the camera shot is unusable (speaker turned away, out of focus); give it its own scene laid out for the tall box.
 - `cfg.face {y0, y1}`: source rows from above the hair to below the mic. The window scales to fit this whole band (letterboxed at the sides), so the head is never cut. Check a still.
 - Start with a talk intro (title card + hook chips), drop into card mode for the explanation, return to talk for punchline questions and the ending.
 

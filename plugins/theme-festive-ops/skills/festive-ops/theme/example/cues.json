@@ -1,0 +1,314 @@
+[
+ {
+  "sfx": "hit",
+  "t": 0.05,
+  "db": -17
+ },
+ {
+  "sfx": "ding",
+  "t": 0.25,
+  "db": -16
+ },
+ {
+  "sfx": "swish",
+  "t": 1.95,
+  "db": -20
+ },
+ {
+  "sfx": "ding",
+  "t": "offer",
+  "db": -19
+ },
+ {
+  "sfx": "ding",
+  "t": "lakho",
+  "db": -19
+ },
+ {
+  "sfx": "ding",
+  "t": 3.8,
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "lakho+0.2",
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 4.85,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 6.75,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 29.45,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 78.95,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 27.15,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 77.05,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 121.75,
+  "db": -20
+ },
+ {
+  "sfx": "swish",
+  "t": 20.299999999999997,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 34.8,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 43.6,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 54.699999999999996,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 70.5,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 93.2,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 106.10000000000001,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 111.80000000000001,
+  "db": -21
+ },
+ {
+  "sfx": "riser",
+  "t": "lakh-1.0",
+  "db": -26
+ },
+ {
+  "sfx": "hit",
+  "t": "lakh+0.9",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": "individual",
+  "db": -26,
+  "repeat": 18,
+  "every": 0.17
+ },
+ {
+  "sfx": "error",
+  "t": "request",
+  "db": -24
+ },
+ {
+  "sfx": "error",
+  "t": "overload",
+  "db": -19
+ },
+ {
+  "sfx": "hit",
+  "t": "overload",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "mq",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "workers",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "pns",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "electronics",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "jobs",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "multiple",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "w1",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "w2",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "firebase",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "apple",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "relevant",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "retries",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "ratelimit",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "controlled",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "queues",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "workers2",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "push2",
+  "db": -22
+ },
+ {
+  "sfx": "ding",
+  "t": "offers",
+  "db": -19
+ },
+ {
+  "sfx": "error",
+  "t": "send-0.6",
+  "db": -25
+ },
+ {
+  "sfx": "ding",
+  "t": "turn",
+  "db": -21
+ },
+ {
+  "sfx": "hit",
+  "t": "fanout",
+  "db": -20
+ },
+ {
+  "sfx": "riser",
+  "t": "pileup",
+  "db": -26
+ },
+ {
+  "sfx": "hit",
+  "t": "autoscale",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "additional+0.0",
+  "db": -25
+ },
+ {
+  "sfx": "pop",
+  "t": "additional+0.2",
+  "db": -25
+ },
+ {
+  "sfx": "pop",
+  "t": "additional+0.4",
+  "db": -25
+ },
+ {
+  "sfx": "pop",
+  "t": "additional+0.6",
+  "db": -25
+ },
+ {
+  "sfx": "pop",
+  "t": "additional+0.8",
+  "db": -25
+ },
+ {
+  "sfx": "error",
+  "t": "deliver",
+  "db": -23
+ },
+ {
+  "sfx": "ding",
+  "t": "delay",
+  "db": -21
+ },
+ {
+  "sfx": "ding",
+  "t": "msg",
+  "db": -17
+ },
+ {
+  "sfx": "riser",
+  "t": "thats-1.2",
+  "db": -26
+ },
+ {
+  "sfx": "hit",
+  "t": "thats",
+  "db": -19
+ },
+ {
+  "sfx": "ding",
+  "t": "thats+0.3",
+  "db": -20
+ }
+]

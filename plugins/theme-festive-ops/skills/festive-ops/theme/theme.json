@@ -1,0 +1,5 @@
+{
+  "name": "festive-ops",
+  "npm": ["@fontsource/sora@^5", "@fontsource/dm-sans@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 26, "lines": 2}
+}

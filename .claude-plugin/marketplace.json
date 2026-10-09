@@ -52,6 +52,11 @@
       "description": "Theme: cinematic black and red, full-screen intro, icon-driven system-design diagrams on a glowing card, speaker window framed hair to mic."
     },
     {
+      "name": "theme-festive-ops",
+      "source": "./plugins/theme-festive-ops",
+      "description": "Theme: light grey blueprint with sale orange and app blue, notification-toast captions, phone mockups and push toasts, logo inline with the title."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

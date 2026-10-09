@@ -1,0 +1,10 @@
+{
+  "name": "theme-festive-ops",
+  "version": "1.0.0",
+  "description": "Reel theme: light grey blueprint canvas with sale orange and app blue, notification-toast captions, phone mockups and push toasts, speaker window framed hair to mic.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "system design", "light", "notifications", "e-commerce"]
+}

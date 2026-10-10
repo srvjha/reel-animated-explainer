@@ -1,0 +1,5 @@
+{
+  "name": "saffron-ledger",
+  "npm": ["@fontsource/outfit@^5", "@fontsource/ibm-plex-sans@^5", "@fontsource/ibm-plex-mono@^5"],
+  "captions": {"maxc": 26, "lines": 2}
+}

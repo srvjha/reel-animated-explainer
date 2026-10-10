@@ -1,0 +1,438 @@
+[
+ {
+  "sfx": "hit",
+  "t": 0.05,
+  "db": -17
+ },
+ {
+  "sfx": "swish",
+  "t": "crores-0.6",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "google",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "phonepe",
+  "db": -20
+ },
+ {
+  "sfx": "swish",
+  "t": "paise",
+  "db": -21
+ },
+ {
+  "sfx": "coin",
+  "t": "bank2",
+  "db": -20
+ },
+ {
+  "sfx": "swish",
+  "t": 10.4,
+  "db": -22
+ },
+ {
+  "sfx": "whoosh",
+  "t": 11.95,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 64.65,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 87.35,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 61.15,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 85.35,
+  "db": -20
+ },
+ {
+  "sfx": "whoosh",
+  "t": 166.15,
+  "db": -20
+ },
+ {
+  "sfx": "swish",
+  "t": 21.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 41.699999999999996,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 52.5,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 75.2,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 101.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 110.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 120.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 132.4,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 139.70000000000002,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 155.8,
+  "db": -21
+ },
+ {
+  "sfx": "coin",
+  "t": "r1000",
+  "db": -19
+ },
+ {
+  "sfx": "stamp",
+  "t": "credit+1.0",
+  "db": -22
+ },
+ {
+  "sfx": "stamp",
+  "t": "r20",
+  "db": -21
+ },
+ {
+  "sfx": "stamp",
+  "t": "r3",
+  "db": -21
+ },
+ {
+  "sfx": "stamp",
+  "t": "r23",
+  "db": -21
+ },
+ {
+  "sfx": "coin",
+  "t": "r976",
+  "db": -19
+ },
+ {
+  "sfx": "stamp",
+  "t": "zero",
+  "db": -20
+ },
+ {
+  "sfx": "coin",
+  "t": "merchant2",
+  "db": -18
+ },
+ {
+  "sfx": "pop",
+  "t": "mdrm",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "discount",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "rate",
+  "db": -21
+ },
+ {
+  "sfx": "coin",
+  "t": "behalf",
+  "db": -21
+ },
+ {
+  "sfx": "stamp",
+  "t": "subsidized",
+  "db": -19
+ },
+ {
+  "sfx": "hit",
+  "t": "fullform+0.1",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "unified",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "payments",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "interface",
+  "db": -22
+ },
+ {
+  "sfx": "stamp",
+  "t": "npci",
+  "db": -19
+ },
+ {
+  "sfx": "pop",
+  "t": "gpay",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "ppe",
+  "db": -21
+ },
+ {
+  "sfx": "fail",
+  "t": "notprov",
+  "db": -24
+ },
+ {
+  "sfx": "success",
+  "t": "iface",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "banks+0.00",
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "banks+0.12",
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "banks+0.24",
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "friend",
+  "db": -22
+ },
+ {
+  "sfx": "tick",
+  "t": "upiid",
+  "db": -27,
+  "repeat": 10,
+  "every": 0.07
+ },
+ {
+  "sfx": "pop",
+  "t": "qr",
+  "db": -22
+ },
+ {
+  "sfx": "coin",
+  "t": "amount",
+  "db": -20
+ },
+ {
+  "sfx": "tick",
+  "t": "pin",
+  "db": -23,
+  "repeat": 4,
+  "every": 0.18
+ },
+ {
+  "sfx": "stamp",
+  "t": "yourbank",
+  "db": -21
+ },
+ {
+  "sfx": "success",
+  "t": "checks-0.10",
+  "db": -26
+ },
+ {
+  "sfx": "success",
+  "t": "checks+0.15",
+  "db": -26
+ },
+ {
+  "sfx": "success",
+  "t": "checks+0.40",
+  "db": -26
+ },
+ {
+  "sfx": "stamp",
+  "t": "npci2",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "details",
+  "db": -22
+ },
+ {
+  "sfx": "stamp",
+  "t": "process",
+  "db": -21
+ },
+ {
+  "sfx": "coin",
+  "t": "result",
+  "db": -20
+ },
+ {
+  "sfx": "fail",
+  "t": "directly+0.3",
+  "db": -23
+ },
+ {
+  "sfx": "stamp",
+  "t": "participating+0.7",
+  "db": -20
+ },
+ {
+  "sfx": "success",
+  "t": "milkar",
+  "db": -22
+ },
+ {
+  "sfx": "success",
+  "t": "success",
+  "db": -17
+ },
+ {
+  "sfx": "fail",
+  "t": "fail",
+  "db": -19
+ },
+ {
+  "sfx": "tick",
+  "t": "response",
+  "db": -26,
+  "repeat": 6,
+  "every": 0.4
+ },
+ {
+  "sfx": "fail",
+  "t": "dobara+0.3",
+  "db": -23
+ },
+ {
+  "sfx": "success",
+  "t": "check",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "secured",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "routing",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "integration",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "monitoring",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "failure",
+  "db": -22
+ },
+ {
+  "sfx": "coin",
+  "t": "seconds",
+  "db": -22
+ },
+ {
+  "sfx": "fail",
+  "t": "notapp-0.3",
+  "db": -25
+ },
+ {
+  "sfx": "hit",
+  "t": "ecosystem",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "bankx",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "npcix",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "appsx",
+  "db": -21
+ },
+ {
+  "sfx": "coin",
+  "t": "fast",
+  "db": -24
+ },
+ {
+  "sfx": "coin",
+  "t": "accessible",
+  "db": -24
+ },
+ {
+  "sfx": "coin",
+  "t": "convenient",
+  "db": -24
+ },
+ {
+  "sfx": "riser",
+  "t": "thats-1.2",
+  "db": -26
+ },
+ {
+  "sfx": "hit",
+  "t": "thats",
+  "db": -19
+ },
+ {
+  "sfx": "success",
+  "t": "thats+0.3",
+  "db": -21
+ }
+]

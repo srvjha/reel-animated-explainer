@@ -1,0 +1,10 @@
+{
+  "name": "theme-saffron-ledger",
+  "version": "1.0.0",
+  "description": "Reel theme: warm cream paper with saffron and India green, navy ink, hard-shadow stamped cards, receipt-slip captions, Phosphor duotone icons and official logos inline with the title.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "fintech", "payments", "upi", "light"]
+}

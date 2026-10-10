@@ -17,6 +17,7 @@ Built while editing the **Building Backend Systems** series.
 | **pip-grid** | Black grid, diagrams fill the frame, speaker in a round picture-in-picture bubble, gradient-wipe captions |
 | **editor-light** | Butter-yellow grid, light code editor with typed snippets, background-removed speaker sticker, highlighter captions |
 | **launch-promo** | Product promos: talking head plus real screen recordings with zoom, pan and speed-up, brand reveal, comment CTA |
+| **saffron-ledger** | Cream paper, saffron and India green, stamped cards with hard shadows, receipt captions, Phosphor icons, official logos inline with the title |
 | **festive-ops** | Light grey blueprint, sale orange and app blue, notification-toast captions, phone mockups and push toasts, logo inline with the title |
 | **noir-red** | Cinematic black and red, full-screen intro, icon-driven system-design diagrams on a glowing card, speaker window framed hair to mic |
 
@@ -29,6 +30,7 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-launch-promo.jpg" width="720" alt="launch-promo theme frames"></p>
 <p align="center"><img src="demo/theme-noir-red.jpg" width="720" alt="noir-red theme frames"></p>
 <p align="center"><img src="demo/theme-festive-ops.jpg" width="720" alt="festive-ops theme frames"></p>
+<p align="center"><img src="demo/theme-saffron-ledger.jpg" width="720" alt="saffron-ledger theme frames"></p>
 
 ## Install
 
@@ -40,7 +42,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

@@ -1,0 +1,257 @@
+[
+ {
+  "sfx": "hit",
+  "t": 0.05,
+  "db": -17
+ },
+ {
+  "sfx": "pop",
+  "t": 0.15,
+  "db": -21
+ },
+ {
+  "sfx": "send",
+  "t": "bheja",
+  "db": -18
+ },
+ {
+  "sfx": "error",
+  "t": "internet",
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "kahan-0.3",
+  "db": -22
+ },
+ {
+  "sfx": "swish",
+  "t": 7.4,
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "online-0.2",
+  "db": -21
+ },
+ {
+  "sfx": "recv",
+  "t": "deliver0",
+  "db": -17
+ },
+ {
+  "sfx": "whoosh",
+  "t": 10.75,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 72.05,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 66.05,
+  "db": -20
+ },
+ {
+  "sfx": "swish",
+  "t": 16.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 21.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 27.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 36.699999999999996,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 42.4,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 50.199999999999996,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 59.5,
+  "db": -21
+ },
+ {
+  "sfx": "send",
+  "t": "phone",
+  "db": -19
+ },
+ {
+  "sfx": "tick",
+  "t": "send",
+  "db": -18
+ },
+ {
+  "sfx": "error",
+  "t": "deliver",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "store",
+  "db": -19
+ },
+ {
+  "sfx": "pop",
+  "t": "recipient",
+  "db": -23
+ },
+ {
+  "sfx": "blip",
+  "t": "continuously",
+  "db": -25
+ },
+ {
+  "sfx": "blip",
+  "t": "call",
+  "db": -25
+ },
+ {
+  "sfx": "blip",
+  "t": "ol1",
+  "db": -25
+ },
+ {
+  "sfx": "blip",
+  "t": "ol2",
+  "db": -25
+ },
+ {
+  "sfx": "error",
+  "t": "ol2+0.5",
+  "db": -23
+ },
+ {
+  "sfx": "ding",
+  "t": "available",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "reconnect",
+  "db": -20
+ },
+ {
+  "sfx": "blip",
+  "t": "connect",
+  "db": -22
+ },
+ {
+  "sfx": "send",
+  "t": "pending",
+  "db": -20
+ },
+ {
+  "sfx": "recv",
+  "t": "deliver2",
+  "db": -18
+ },
+ {
+  "sfx": "blip",
+  "t": "ack",
+  "db": -20
+ },
+ {
+  "sfx": "blip",
+  "t": "update",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": "change",
+  "db": -16
+ },
+ {
+  "sfx": "tick",
+  "t": "change+0.08",
+  "db": -16
+ },
+ {
+  "sfx": "error",
+  "t": "break",
+  "db": -19
+ },
+ {
+  "sfx": "hit",
+  "t": "break",
+  "db": -22
+ },
+ {
+  "sfx": "riser",
+  "t": "attempt-1.2",
+  "db": -27
+ },
+ {
+  "sfx": "send",
+  "t": "attempt-0.3",
+  "db": -20
+ },
+ {
+  "sfx": "blip",
+  "t": "ack2",
+  "db": -21
+ },
+ {
+  "sfx": "recv",
+  "t": "duplicate",
+  "db": -21
+ },
+ {
+  "sfx": "error",
+  "t": "handling",
+  "db": -23
+ },
+ {
+  "sfx": "ding",
+  "t": "reliable-0.3",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "nexttime",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "sirf-0.3",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "store2",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "reconnect2",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "delivery",
+  "db": -20
+ },
+ {
+  "sfx": "recv",
+  "t": "complete-0.3",
+  "db": -17
+ }
+]

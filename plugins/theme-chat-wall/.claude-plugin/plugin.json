@@ -1,0 +1,10 @@
+{
+  "name": "theme-chat-wall",
+  "version": "1.0.0",
+  "description": "Reel theme: messenger look. Beige doodle chat wallpaper, teal title bars, chat-bubble captions with ticks, phone mockups with chat headers, cut-out speaker on the wallpaper.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "messaging", "chat", "whatsapp", "system design"]
+}

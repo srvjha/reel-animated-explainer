@@ -62,6 +62,11 @@
       "description": "Theme: cream paper with saffron and India green, stamped cards, receipt captions, Phosphor icons, official logos inline with the title (fintech, payments)."
     },
     {
+      "name": "theme-chat-wall",
+      "source": "./plugins/theme-chat-wall",
+      "description": "Theme: messenger look, doodle chat wallpaper, teal bars, chat-bubble captions with ticks, phone mockups, cut-out speaker."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

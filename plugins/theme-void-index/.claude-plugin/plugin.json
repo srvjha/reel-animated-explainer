@@ -1,0 +1,10 @@
+{
+  "name": "theme-void-index",
+  "version": "1.0.0",
+  "description": "Reel theme for list and countdown reels (10 X in 60 seconds): near-black canvas, blue and cyan glow, 1..N progress rail, countdown ring scaled to the list, item cards with big outlined numbers, cut-out speaker.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "list", "countdown", "ai", "dark"]
+}

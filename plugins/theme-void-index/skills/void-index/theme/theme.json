@@ -1,0 +1,5 @@
+{
+  "name": "void-index",
+  "npm": ["@fontsource/space-grotesk@^5", "@fontsource/inter@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 26, "lines": 2}
+}

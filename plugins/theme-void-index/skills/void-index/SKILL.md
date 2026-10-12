@@ -20,6 +20,7 @@ Pass `THEME_DIR` to reel-studio's `prepare.sh`. The full reference reel is `them
 - `talk`: speaker full screen; overlays in the band y 1120 to 1560; captions at y 1600.
 - `card`: header at y 34 (title, rail, ring), card at y 168 with **scenes in 1000 x 800**, captions at y 1010, speaker window x 40 y 1190, 1000 x 700.
 - Use `ItemHead n term full` at the top of every item scene; leave y 210 to 780 for the diagram.
+- `cfg.rawUntil`: show the original camera shot (real room) until this time, then cross-fade to the cut-out; good for an intro that should feel real before the list starts. `cfg.cutBottom` fades the cut-out below a fraction of the source height when the matte kept a desk.
 - Speaker cut-out: reel-studio `cutout/matte.py` + `build_speaker.py`, then `cfg.speaker: 'speaker.webm'`. Do not render stills while two matte jobs run on an 8 GB machine.
 
 ## Components (`./theme/kit`)

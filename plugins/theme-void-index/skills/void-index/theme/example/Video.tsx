@@ -328,6 +328,7 @@ export const cfg: Config = {
   overlays: [Intro, Outro],
   speaker: 'speaker.webm',
   cutBottom: 0.845,
+  rawUntil: T.first,
 };
 
 export const scenes: Scene[] = [

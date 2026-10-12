@@ -28,6 +28,7 @@ export type Config = {
   face: {y0: number; y1: number};
   overlays?: React.FC[];
   speaker?: string;                                 // transparent cut-out speaker video (VP9 alpha) in public/
+  rawUntil?: number;                                // show the original camera shot (real background) until this time, then the cut-out
   cutBottom?: number;                               // fade the speaker out below this fraction of the source height (hides a desk the matte kept)
 };
 
@@ -146,6 +147,7 @@ const Card: React.FC<{scenes: Scene[]; k: number}> = ({scenes, k}) => {
 };
 
 const Speaker: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => {
+  const t = useT();
   const {y0, y1} = cfg.face; const fh = y1 - y0;
   const W1 = 1000, H1 = 700, X1 = 40, Y1 = 1190;
   const s1 = Math.min(H1 / fh, W1 / 1080 * 1.12);
@@ -157,6 +159,9 @@ const Speaker: React.FC<{cfg: Config; k: number}> = ({cfg, k}) => {
     <div style={{position: 'absolute', left: vx, top: vy, width: 1080 * s, height: 1920 * s, WebkitMaskImage: cfg.cutBottom ? `linear-gradient(to bottom, #000 ${cfg.cutBottom * 100 - 4}%, transparent ${cfg.cutBottom * 100}%)` : undefined, maskImage: cfg.cutBottom ? `linear-gradient(to bottom, #000 ${cfg.cutBottom * 100 - 4}%, transparent ${cfg.cutBottom * 100}%)` : undefined}}>
       {cfg.speaker ? <OffthreadVideo src={staticFile(cfg.speaker)} transparent muted style={{width: '100%', height: '100%'}} /> : <OffthreadVideo src={staticFile('src.mp4')} muted style={{width: '100%', height: '100%'}} />}
     </div>
+    {cfg.speaker && cfg.rawUntil !== undefined && t < cfg.rawUntil + 0.3 && <div style={{position: 'absolute', left: vx, top: vy, width: 1080 * s, height: 1920 * s, opacity: clamp((cfg.rawUntil + 0.25 - t) / 0.5)}}>
+      <OffthreadVideo src={staticFile('src.mp4')} muted style={{width: '100%', height: '100%'}} />
+    </div>}
   </div>;
 };
 

@@ -1,0 +1,234 @@
+[
+ {
+  "sfx": "hit",
+  "t": 0.05,
+  "db": -17
+ },
+ {
+  "sfx": "pop",
+  "t": 0.15,
+  "db": -21
+ },
+ {
+  "sfx": "whoosh",
+  "t": "karan-0.4",
+  "db": -18
+ },
+ {
+  "sfx": "stamp",
+  "t": "karan",
+  "db": -19
+ },
+ {
+  "sfx": "ding",
+  "t": "oneseat",
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 7.35,
+  "db": -18
+ },
+ {
+  "sfx": "whoosh",
+  "t": 108.25,
+  "db": -20
+ },
+ {
+  "sfx": "swish",
+  "t": 16.099999999999998,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 35.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 58.9,
+  "db": -21
+ },
+ {
+  "sfx": "swish",
+  "t": 86.9,
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "same",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "same+0.15",
+  "db": -20
+ },
+ {
+  "sfx": "error",
+  "t": "kisko",
+  "db": -23
+ },
+ {
+  "sfx": "blip",
+  "t": "avail1",
+  "db": -22
+ },
+ {
+  "sfx": "blip",
+  "t": "avail1+0.15",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "create",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "create2",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "create2+0.2",
+  "db": -20
+ },
+ {
+  "sfx": "error",
+  "t": "twice",
+  "db": -19
+ },
+ {
+  "sfx": "hit",
+  "t": "race",
+  "db": -19
+ },
+ {
+  "sfx": "lock",
+  "t": "lock",
+  "db": -16
+ },
+ {
+  "sfx": "tick",
+  "t": "wait",
+  "db": -25,
+  "repeat": 6,
+  "every": 0.4
+ },
+ {
+  "sfx": "ding",
+  "t": "commit",
+  "db": -18
+ },
+ {
+  "sfx": "error",
+  "t": "reject",
+  "db": -20
+ },
+ {
+  "sfx": "tick",
+  "t": "sql",
+  "db": -27,
+  "repeat": 14,
+  "every": 0.12
+ },
+ {
+  "sfx": "tick",
+  "t": "seats",
+  "db": -27,
+  "repeat": 10,
+  "every": 0.1
+ },
+ {
+  "sfx": "tick",
+  "t": "where",
+  "db": -27,
+  "repeat": 8,
+  "every": 0.1
+ },
+ {
+  "sfx": "tick",
+  "t": "status2",
+  "db": -27,
+  "repeat": 12,
+  "every": 0.1
+ },
+ {
+  "sfx": "recv",
+  "t": "onerow",
+  "db": -19
+ },
+ {
+  "sfx": "error",
+  "t": "zero",
+  "db": -21
+ },
+ {
+  "sfx": "hit",
+  "t": "atomic",
+  "db": -21
+ },
+ {
+  "sfx": "lock",
+  "t": "reserved",
+  "db": -18
+ },
+ {
+  "sfx": "tick",
+  "t": "temporarily",
+  "db": -29,
+  "repeat": 16,
+  "every": 0.42
+ },
+ {
+  "sfx": "error",
+  "t": "expire",
+  "db": -19
+ },
+ {
+  "sfx": "ding",
+  "t": "availagain",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "confirmation",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "failure",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "concurrent",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "consistent",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "failures",
+  "db": -21
+ },
+ {
+  "sfx": "riser",
+  "t": "thats-1.2",
+  "db": -27
+ },
+ {
+  "sfx": "stamp",
+  "t": "thats",
+  "db": -18
+ },
+ {
+  "sfx": "recv",
+  "t": "thats+0.3",
+  "db": -20
+ }
+]

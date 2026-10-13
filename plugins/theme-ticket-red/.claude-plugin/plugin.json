@@ -1,0 +1,10 @@
+{
+  "name": "theme-ticket-red",
+  "version": "1.0.0",
+  "description": "Reel theme: event ticketing look. Whitish paper with ticket red, perforated ticket cards, cinema seat maps, ticket-stub captions, logo inline in a red header band, cut-out speaker.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "booking", "tickets", "concurrency", "system design", "light"]
+}

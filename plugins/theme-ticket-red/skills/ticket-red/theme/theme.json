@@ -1,0 +1,5 @@
+{
+  "name": "ticket-red",
+  "npm": ["@fontsource/poppins@^5", "@fontsource/inter@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 26, "lines": 2}
+}

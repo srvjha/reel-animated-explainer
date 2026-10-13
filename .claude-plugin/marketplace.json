@@ -72,6 +72,11 @@
       "description": "Theme: list and countdown reels, near-black with blue, cyan and brown glow, progress rail, countdown ring scaled to the list, item cards, cut-out speaker."
     },
     {
+      "name": "theme-ticket-red",
+      "source": "./plugins/theme-ticket-red",
+      "description": "Theme: event ticketing look, whitish paper with ticket red, perforated ticket cards, seat maps, ticket-stub captions, cut-out speaker."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

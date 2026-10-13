@@ -17,6 +17,7 @@ Built while editing the **Building Backend Systems** series.
 | **pip-grid** | Black grid, diagrams fill the frame, speaker in a round picture-in-picture bubble, gradient-wipe captions |
 | **editor-light** | Butter-yellow grid, light code editor with typed snippets, background-removed speaker sticker, highlighter captions |
 | **launch-promo** | Product promos: talking head plus real screen recordings with zoom, pan and speed-up, brand reveal, comment CTA |
+| **ticket-red** | Event ticketing look: whitish paper, ticket red, perforated ticket cards, cinema seat maps, ticket-stub captions |
 | **void-index** | List and countdown reels: near-black with blue, cyan and brown glow, 1..N progress rail, countdown ring, item cards with outlined numbers |
 | **chat-wall** | Messenger look: doodle chat wallpaper, teal bars, chat-bubble captions with ticks, phone mockups, cut-out speaker |
 | **saffron-ledger** | Cream paper, saffron and India green, stamped cards with hard shadows, receipt captions, Phosphor icons, official logos inline with the title |
@@ -35,6 +36,7 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-saffron-ledger.jpg" width="720" alt="saffron-ledger theme frames"></p>
 <p align="center"><img src="demo/theme-chat-wall.jpg" width="720" alt="chat-wall theme frames"></p>
 <p align="center"><img src="demo/theme-void-index.jpg" width="720" alt="void-index theme frames"></p>
+<p align="center"><img src="demo/theme-ticket-red.jpg" width="720" alt="ticket-red theme frames"></p>
 
 ## Install
 
@@ -46,7 +48,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

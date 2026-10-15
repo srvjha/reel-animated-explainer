@@ -77,6 +77,11 @@
       "description": "Theme: event ticketing look, whitish paper with ticket red, perforated ticket cards, seat maps, ticket-stub captions, cut-out speaker."
     },
     {
+      "name": "theme-sketchbook",
+      "source": "./plugins/theme-sketchbook",
+      "description": "Theme: notebook explainer with hard cuts between the speaker (real background) and full-screen hand-drawn pages, handwriting, highlighter captions, lo-fi music."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

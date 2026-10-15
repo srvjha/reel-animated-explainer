@@ -1,0 +1,5 @@
+{
+  "name": "sketchbook",
+  "npm": ["@fontsource/caveat@^5", "@fontsource/kalam@^5", "@fontsource/patrick-hand@^5", "roughjs@^4.6"],
+  "captions": {"maxc": 24, "lines": 2}
+}

@@ -1,0 +1,10 @@
+{
+  "name": "theme-sketchbook",
+  "version": "1.0.0",
+  "description": "Reel theme: sketchbook. Hard cuts between the speaker full screen (real background kept) and full-screen notebook pages with hand-drawn rough.js diagrams that draw themselves on, handwriting fonts, highlighter captions, sticky notes and a lo-fi music bed.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "sketch", "whiteboard", "handwriting", "databases", "explainer", "light"]
+}

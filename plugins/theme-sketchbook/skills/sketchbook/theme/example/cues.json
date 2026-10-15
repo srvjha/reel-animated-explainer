@@ -1,0 +1,357 @@
+[
+ {
+  "sfx": "flip",
+  "t": 1.15,
+  "db": -17
+ },
+ {
+  "sfx": "flip",
+  "t": 7.3500000000000005,
+  "db": -17
+ },
+ {
+  "sfx": "flip",
+  "t": 30.15,
+  "db": -17
+ },
+ {
+  "sfx": "flip",
+  "t": 44.75,
+  "db": -17
+ },
+ {
+  "sfx": "flip",
+  "t": 60.35,
+  "db": -17
+ },
+ {
+  "sfx": "flip",
+  "t": 83.95,
+  "db": -17
+ },
+ {
+  "sfx": "flip",
+  "t": 103.15,
+  "db": -17
+ },
+ {
+  "sfx": "flip",
+  "t": 5.2,
+  "db": -22
+ },
+ {
+  "sfx": "flip",
+  "t": 27.0,
+  "db": -22
+ },
+ {
+  "sfx": "flip",
+  "t": 42.599999999999994,
+  "db": -22
+ },
+ {
+  "sfx": "flip",
+  "t": 58.199999999999996,
+  "db": -22
+ },
+ {
+  "sfx": "flip",
+  "t": 82.2,
+  "db": -22
+ },
+ {
+  "sfx": "flip",
+  "t": 99.1,
+  "db": -22
+ },
+ {
+  "sfx": "flip",
+  "t": 18.75,
+  "db": -21
+ },
+ {
+  "sfx": "flip",
+  "t": 73.35,
+  "db": -21
+ },
+ {
+  "sfx": "scribble",
+  "t": 1.25,
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": 7.5,
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": "logical",
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": 30.25,
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": 44.9,
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": 60.5,
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": "locks",
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": 84.05,
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "rupee",
+  "db": -22
+ },
+ {
+  "sfx": "scribble",
+  "t": "kat",
+  "db": -26
+ },
+ {
+  "sfx": "pop",
+  "t": "friend",
+  "db": -23
+ },
+ {
+  "sfx": "erase",
+  "t": "pahunche",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "nahi-0.1",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "five",
+  "db": -23
+ },
+ {
+  "sfx": "scribble",
+  "t": 11.0,
+  "db": -27
+ },
+ {
+  "sfx": "pop",
+  "t": "transfer",
+  "db": -24
+ },
+ {
+  "sfx": "erase",
+  "t": "deduct",
+  "db": -22
+ },
+ {
+  "sfx": "erase",
+  "t": "add",
+  "db": -22
+ },
+ {
+  "sfx": "ding",
+  "t": "add+0.2",
+  "db": -24
+ },
+ {
+  "sfx": "scribble",
+  "t": "txn",
+  "db": -22
+ },
+ {
+  "sfx": "ding",
+  "t": "txn+0.4",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "acid+0.00",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "acid+0.18",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "acid+0.36",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "acid+0.54",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": "deduct2",
+  "db": -18
+ },
+ {
+  "sfx": "error",
+  "t": "addfail-0.2",
+  "db": -22
+ },
+ {
+  "sfx": "erase",
+  "t": "undo",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "poori",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "varna+0.1",
+  "db": -22
+ },
+ {
+  "sfx": "crumple",
+  "t": "rules",
+  "db": -24
+ },
+ {
+  "sfx": "error",
+  "t": "neg+0.5",
+  "db": -23
+ },
+ {
+  "sfx": "thud",
+  "t": "neg2",
+  "db": -19
+ },
+ {
+  "sfx": "pop",
+  "t": "valid",
+  "db": -22
+ },
+ {
+  "sfx": "ding",
+  "t": "valid2",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "bal",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "w4",
+  "db": -22
+ },
+ {
+  "sfx": "tick",
+  "t": "read",
+  "db": -19
+ },
+ {
+  "sfx": "tick",
+  "t": "read+0.1",
+  "db": -19
+ },
+ {
+  "sfx": "tick",
+  "t": "incorrect",
+  "db": -18
+ },
+ {
+  "sfx": "tick",
+  "t": "incorrect+0.2",
+  "db": -18
+ },
+ {
+  "sfx": "error",
+  "t": 72.4,
+  "db": -22
+ },
+ {
+  "sfx": "thud",
+  "t": "locks+0.2",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": 76.6,
+  "db": -18
+ },
+ {
+  "sfx": "error",
+  "t": 77.8,
+  "db": -23
+ },
+ {
+  "sfx": "crumple",
+  "t": "behavior",
+  "db": -24
+ },
+ {
+  "sfx": "thud",
+  "t": "commit",
+  "db": -19
+ },
+ {
+  "sfx": "ding",
+  "t": "commit+0.1",
+  "db": -24
+ },
+ {
+  "sfx": "thud",
+  "t": "crashes",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "disk-0.2",
+  "db": -22
+ },
+ {
+  "sfx": "thud",
+  "t": "crash",
+  "db": -16
+ },
+ {
+  "sfx": "scribble",
+  "t": "wal",
+  "db": -24
+ },
+ {
+  "sfx": "ding",
+  "t": "recover",
+  "db": -21
+ },
+ {
+  "sfx": "crumple",
+  "t": "comment",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": 103.8,
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "dm-0.2",
+  "db": -21
+ }
+]

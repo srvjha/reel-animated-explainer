@@ -1,0 +1,5 @@
+{
+  "name": "receipt-tape",
+  "npm": ["@fontsource/space-mono@^5", "@fontsource/archivo@^5", "@fontsource/archivo-black@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

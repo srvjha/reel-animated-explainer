@@ -82,6 +82,11 @@
       "description": "Theme: notebook explainer with hard cuts between the speaker (real background) and full-screen hand-drawn pages, handwriting, highlighter captions, lo-fi music."
     },
     {
+      "name": "theme-receipt-tape",
+      "source": "./plugins/theme-receipt-tape",
+      "description": "Theme: dark desk explainer with hard cuts between the speaker (real background) and full-screen pages of printing receipt slips, data-file cards, stamps and blackouts, ambient electronic music."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

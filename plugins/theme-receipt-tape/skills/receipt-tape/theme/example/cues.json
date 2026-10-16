@@ -1,0 +1,366 @@
+[
+ {
+  "sfx": "tear",
+  "t": 1.15,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 7.949999999999999,
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 17.45,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 24.35,
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 28.15,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 42.05,
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 44.050000000000004,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 54.95,
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 58.95,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 64.55,
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 66.55,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 81.95,
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 84.95,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 98.75,
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 100.35000000000001,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 103.25,
+  "db": -24
+ },
+ {
+  "sfx": "print",
+  "t": 1.3,
+  "db": -23
+ },
+ {
+  "sfx": "beep",
+  "t": "entry",
+  "db": -25
+ },
+ {
+  "sfx": "powerdown",
+  "t": "power",
+  "db": -15
+ },
+ {
+  "sfx": "powerup",
+  "t": "restart-0.3",
+  "db": -19
+ },
+ {
+  "sfx": "print",
+  "t": 6.4,
+  "db": -24
+ },
+ {
+  "sfx": "stamp",
+  "t": "recover",
+  "db": -17
+ },
+ {
+  "sfx": "pop",
+  "t": "kaise",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "main",
+  "db": -22
+ },
+ {
+  "sfx": "tick",
+  "t": "update",
+  "db": -22,
+  "repeat": 6,
+  "every": 0.2
+ },
+ {
+  "sfx": "powerdown",
+  "t": "crash",
+  "db": -17
+ },
+ {
+  "sfx": "error",
+  "t": "crash+0.5",
+  "db": -24
+ },
+ {
+  "sfx": "stamp",
+  "t": "incomplete",
+  "db": -17
+ },
+ {
+  "sfx": "print",
+  "t": 28.6,
+  "db": -23
+ },
+ {
+  "sfx": "print",
+  "t": "insert",
+  "db": -24,
+  "args": {
+   "d": 0.45
+  }
+ },
+ {
+  "sfx": "print",
+  "t": "upd",
+  "db": -24,
+  "args": {
+   "d": 0.45
+  }
+ },
+ {
+  "sfx": "print",
+  "t": "del",
+  "db": -24,
+  "args": {
+   "d": 0.45
+  }
+ },
+ {
+  "sfx": "pop",
+  "t": "pehle",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "baad",
+  "db": -21
+ },
+ {
+  "sfx": "whoosh",
+  "t": "baad-0.1",
+  "db": -26
+ },
+ {
+  "sfx": "pop",
+  "t": "bal",
+  "db": -23
+ },
+ {
+  "sfx": "print",
+  "t": "pehle3-0.3",
+  "db": -23
+ },
+ {
+  "sfx": "beep",
+  "t": "logs+0.4",
+  "db": -25
+ },
+ {
+  "sfx": "pop",
+  "t": 53.4,
+  "db": -21
+ },
+ {
+  "sfx": "ding",
+  "t": 53.5,
+  "db": -25
+ },
+ {
+  "sfx": "stamp",
+  "t": "wal2",
+  "db": -16
+ },
+ {
+  "sfx": "print",
+  "t": 59.2,
+  "db": -23
+ },
+ {
+  "sfx": "beep",
+  "t": "record",
+  "db": -26
+ },
+ {
+  "sfx": "beep",
+  "t": "commit",
+  "db": -24
+ },
+ {
+  "sfx": "tick",
+  "t": "file",
+  "db": -20,
+  "repeat": 5,
+  "every": 0.25
+ },
+ {
+  "sfx": "powerdown",
+  "t": "power2",
+  "db": -15
+ },
+ {
+  "sfx": "powerup",
+  "t": 66.65,
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "recovery",
+  "db": -22
+ },
+ {
+  "sfx": "print",
+  "t": 66.9,
+  "db": -24
+ },
+ {
+  "sfx": "tick",
+  "t": "cp",
+  "db": -18
+ },
+ {
+  "sfx": "tick",
+  "t": "process",
+  "db": -21,
+  "repeat": 4,
+  "every": 0.4
+ },
+ {
+  "sfx": "pop",
+  "t": "committed-0.3",
+  "db": -22
+ },
+ {
+  "sfx": "stamp",
+  "t": "restore",
+  "db": -17
+ },
+ {
+  "sfx": "tick",
+  "t": 76.0,
+  "db": -25,
+  "repeat": 9,
+  "every": 0.08
+ },
+ {
+  "sfx": "pop",
+  "t": 76.8,
+  "db": -20
+ },
+ {
+  "sfx": "error",
+  "t": "har",
+  "db": -25
+ },
+ {
+  "sfx": "ding",
+  "t": "process3",
+  "db": -24
+ },
+ {
+  "sfx": "stamp",
+  "t": 81.9,
+  "db": -18
+ },
+ {
+  "sfx": "pop",
+  "t": "pg",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "doosre",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": "replication",
+  "db": -24,
+  "repeat": 8,
+  "every": 0.45
+ },
+ {
+  "sfx": "ding",
+  "t": "apply2",
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "object",
+  "db": -21
+ },
+ {
+  "sfx": "whoosh",
+  "t": "archive-0.2",
+  "db": -20
+ },
+ {
+  "sfx": "pop",
+  "t": "archive+0.8",
+  "db": -21
+ },
+ {
+  "sfx": "print",
+  "t": 100.5,
+  "db": -22
+ },
+ {
+  "sfx": "beep",
+  "t": "pehle5",
+  "db": -25
+ },
+ {
+  "sfx": "beep",
+  "t": "data5",
+  "db": -24
+ },
+ {
+  "sfx": "tear",
+  "t": 102.6,
+  "db": -24
+ }
+]

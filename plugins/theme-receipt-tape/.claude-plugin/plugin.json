@@ -1,0 +1,10 @@
+{
+  "name": "theme-receipt-tape",
+  "version": "1.0.0",
+  "description": "Reel theme: receipt tape. Hard cuts between the speaker full screen (real background kept) and full-screen dark desk pages where thermal receipt slips print line by line, manila data-file cards, rubber stamps, barcodes, power-failure blackouts, and an ambient electronic music bed.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "receipt", "logs", "databases", "explainer", "dark"]
+}

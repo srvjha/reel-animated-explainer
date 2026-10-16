@@ -19,6 +19,7 @@ Built while editing the **Building Backend Systems** series.
 | **launch-promo** | Product promos: talking head plus real screen recordings with zoom, pan and speed-up, brand reveal, comment CTA |
 | **ticket-red** | Event ticketing look: whitish paper, ticket red, perforated ticket cards, cinema seat maps, ticket-stub captions |
 | **sketchbook** | Notebook explainer: hard cuts between the speaker and full-screen hand-drawn pages, handwriting, highlighter captions, lo-fi music |
+| **receipt-tape** | Dark desk explainer: hard cuts between the speaker and full-screen pages of printing receipt slips, data-file cards, rubber stamps, power-failure blackouts, ambient music |
 | **void-index** | List and countdown reels: near-black with blue, cyan and brown glow, 1..N progress rail, countdown ring, item cards with outlined numbers |
 | **chat-wall** | Messenger look: doodle chat wallpaper, teal bars, chat-bubble captions with ticks, phone mockups, cut-out speaker |
 | **saffron-ledger** | Cream paper, saffron and India green, stamped cards with hard shadows, receipt captions, Phosphor icons, official logos inline with the title |
@@ -39,6 +40,7 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-void-index.jpg" width="720" alt="void-index theme frames"></p>
 <p align="center"><img src="demo/theme-ticket-red.jpg" width="720" alt="ticket-red theme frames"></p>
 <p align="center"><img src="demo/theme-sketchbook.jpg" width="720" alt="sketchbook theme frames"></p>
+<p align="center"><img src="demo/theme-receipt-tape.jpg" width="720" alt="receipt-tape theme frames"></p>
 
 ## Install
 
@@ -50,7 +52,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

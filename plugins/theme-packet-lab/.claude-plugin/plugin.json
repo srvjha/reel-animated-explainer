@@ -1,0 +1,10 @@
+{
+  "name": "theme-packet-lab",
+  "version": "1.0.0",
+  "description": "Reel theme: packet lab. Hard cuts between the speaker full screen (real background kept) and full-screen light network-lab pages with client/server devices, wires and travelling packets, dark code panels with real HTTP/JSON, byte streams, a step tracker, and a minimal house music bed.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "http", "networking", "api", "explainer", "light"]
+}

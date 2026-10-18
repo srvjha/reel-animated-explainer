@@ -87,6 +87,11 @@
       "description": "Theme: dark desk explainer with hard cuts between the speaker (real background) and full-screen pages of printing receipt slips, data-file cards, stamps and blackouts, ambient electronic music."
     },
     {
+      "name": "theme-packet-lab",
+      "source": "./plugins/theme-packet-lab",
+      "description": "Theme: light network-lab explainer with hard cuts between the speaker (real background) and full-screen pages of devices, travelling packets, HTTP/JSON code panels and a step tracker, minimal house music."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

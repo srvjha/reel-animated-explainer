@@ -1,0 +1,5 @@
+{
+  "name": "packet-lab",
+  "npm": ["@fontsource/sora@^5", "@fontsource/ibm-plex-mono@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

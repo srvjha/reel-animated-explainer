@@ -1,0 +1,320 @@
+[
+ {
+  "sfx": "dots",
+  "t": 1.3499999999999999,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 9.1,
+  "db": -25
+ },
+ {
+  "sfx": "dots",
+  "t": 12.45,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 24.099999999999998,
+  "db": -25
+ },
+ {
+  "sfx": "dots",
+  "t": 30.05,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 39.1,
+  "db": -25
+ },
+ {
+  "sfx": "dots",
+  "t": 42.550000000000004,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 60.7,
+  "db": -25
+ },
+ {
+  "sfx": "dots",
+  "t": 65.95,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 76.7,
+  "db": -25
+ },
+ {
+  "sfx": "dots",
+  "t": 81.15,
+  "db": -19
+ },
+ {
+  "sfx": "whoosh",
+  "t": 96.60000000000001,
+  "db": -25
+ },
+ {
+  "sfx": "dots",
+  "t": 98.25,
+  "db": -19
+ },
+ {
+  "sfx": "pop",
+  "t": 1.6,
+  "db": -22
+ },
+ {
+  "sfx": "tick",
+  "t": 2.2,
+  "db": -24,
+  "repeat": 8,
+  "every": 0.35
+ },
+ {
+  "sfx": "error",
+  "t": "naya",
+  "db": -21
+ },
+ {
+  "sfx": "ding",
+  "t": "evl",
+  "db": -21
+ },
+ {
+  "sfx": "whoosh",
+  "t": 17.35,
+  "db": -26
+ },
+ {
+  "sfx": "whoosh",
+  "t": 35.0,
+  "db": -26
+ },
+ {
+  "sfx": "whoosh",
+  "t": 91.15,
+  "db": -26
+ },
+ {
+  "sfx": "pop",
+  "t": "server",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "db",
+  "db": -23
+ },
+ {
+  "sfx": "blip",
+  "t": "req",
+  "db": -22
+ },
+ {
+  "sfx": "blip",
+  "t": "fetch",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "op",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": 20.2,
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": 22.6,
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": 23.8,
+  "db": -24
+ },
+ {
+  "sfx": "error",
+  "t": "zaroorat",
+  "db": -23
+ },
+ {
+  "sfx": "ding",
+  "t": "done",
+  "db": -21
+ },
+ {
+  "sfx": "whoosh",
+  "t": "callback",
+  "db": -24
+ },
+ {
+  "sfx": "blip",
+  "t": "register",
+  "db": -23
+ },
+ {
+  "sfx": "spin",
+  "t": 35.6,
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "cbs",
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": 37.95,
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": 38.3,
+  "db": -24
+ },
+ {
+  "sfx": "spin",
+  "t": "timer-0.5",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "timer",
+  "db": -21
+ },
+ {
+  "sfx": "spin",
+  "t": "poll-0.5",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "poll",
+  "db": -21
+ },
+ {
+  "sfx": "spin",
+  "t": "check-0.5",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "check",
+  "db": -21
+ },
+ {
+  "sfx": "spin",
+  "t": "close-0.5",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "close",
+  "db": -21
+ },
+ {
+  "sfx": "spin",
+  "t": 59.8,
+  "db": -22
+ },
+ {
+  "sfx": "blip",
+  "t": "st",
+  "db": -22
+ },
+ {
+  "sfx": "tick",
+  "t": 67.2,
+  "db": -24,
+  "repeat": 5,
+  "every": 0.12
+ },
+ {
+  "sfx": "blip",
+  "t": "ms100",
+  "db": -21
+ },
+ {
+  "sfx": "error",
+  "t": "exactly",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "later",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": "cpu",
+  "db": -23
+ },
+ {
+  "sfx": "glitch",
+  "t": "sync",
+  "db": -22
+ },
+ {
+  "sfx": "thud",
+  "t": "tblock",
+  "db": -17
+ },
+ {
+  "sfx": "tick",
+  "t": 88.2,
+  "db": -23,
+  "repeat": 5,
+  "every": 0.35
+ },
+ {
+  "sfx": "error",
+  "t": "cbwait",
+  "db": -24
+ },
+ {
+  "sfx": "error",
+  "t": 91.4,
+  "db": -25
+ },
+ {
+  "sfx": "ding",
+  "t": "nonblock",
+  "db": -24
+ },
+ {
+  "sfx": "ding",
+  "t": 93.6,
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "unnecessary",
+  "db": -20
+ },
+ {
+  "sfx": "spin",
+  "t": 98.6,
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "asyncop",
+  "db": -24,
+  "repeat": 5,
+  "every": 0.3
+ },
+ {
+  "sfx": "ding",
+  "t": "request",
+  "db": -21
+ }
+]

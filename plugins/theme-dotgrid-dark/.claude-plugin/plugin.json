@@ -1,0 +1,10 @@
+{
+  "name": "theme-dotgrid-dark",
+  "version": "1.0.0",
+  "description": "Reel theme: dotgrid dark. Hard cuts between the speaker full screen (real background kept) and full-screen near-black dot-grid pages with dark cards, code panels, thread lanes, a callback queue and an event-loop ring; pages appear through the dot grid; dark minimal techno bed.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "nodejs", "event loop", "javascript", "explainer", "dark"]
+}

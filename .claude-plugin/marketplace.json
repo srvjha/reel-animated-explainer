@@ -92,6 +92,11 @@
       "description": "Theme: light network-lab explainer with hard cuts between the speaker (real background) and full-screen pages of devices, travelling packets, HTTP/JSON code panels and a step tracker, minimal house music."
     },
     {
+      "name": "theme-dotgrid-dark",
+      "source": "./plugins/theme-dotgrid-dark",
+      "description": "Theme: black dot-grid explainer with hard cuts between the speaker (real background) and full-screen pages of thread lanes, callback queues, code panels and an event-loop ring, dark techno music."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

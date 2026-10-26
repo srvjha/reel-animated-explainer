@@ -1,0 +1,5 @@
+{
+  "name": "dotgrid-dark",
+  "npm": ["@fontsource/space-grotesk@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

@@ -1,0 +1,296 @@
+[
+ {
+  "sfx": "focus",
+  "t": 1.0999999999999999,
+  "db": -20
+ },
+ {
+  "sfx": "blur",
+  "t": 6.0,
+  "db": -25
+ },
+ {
+  "sfx": "focus",
+  "t": 7.2,
+  "db": -20
+ },
+ {
+  "sfx": "blur",
+  "t": 12.899999999999999,
+  "db": -25
+ },
+ {
+  "sfx": "focus",
+  "t": 15.0,
+  "db": -20
+ },
+ {
+  "sfx": "blur",
+  "t": 23.3,
+  "db": -25
+ },
+ {
+  "sfx": "focus",
+  "t": 25.599999999999998,
+  "db": -20
+ },
+ {
+  "sfx": "blur",
+  "t": 36.6,
+  "db": -25
+ },
+ {
+  "sfx": "focus",
+  "t": 39.4,
+  "db": -20
+ },
+ {
+  "sfx": "blur",
+  "t": 43.1,
+  "db": -25
+ },
+ {
+  "sfx": "focus",
+  "t": 46.3,
+  "db": -20
+ },
+ {
+  "sfx": "blur",
+  "t": 63.6,
+  "db": -25
+ },
+ {
+  "sfx": "focus",
+  "t": 65.30000000000001,
+  "db": -20
+ },
+ {
+  "sfx": "blur",
+  "t": 82.0,
+  "db": -25
+ },
+ {
+  "sfx": "pop",
+  "t": "cc",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "agent",
+  "db": -22
+ },
+ {
+  "sfx": "spark",
+  "t": "harnessq",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "file",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "run",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "web",
+  "db": -23
+ },
+ {
+  "sfx": "error",
+  "t": "nothing+0.00",
+  "db": -26
+ },
+ {
+  "sfx": "error",
+  "t": "nothing+0.12",
+  "db": -26
+ },
+ {
+  "sfx": "error",
+  "t": "nothing+0.24",
+  "db": -26
+ },
+ {
+  "sfx": "type",
+  "t": "token",
+  "db": -27,
+  "args": {
+   "d": 1.2
+  }
+ },
+ {
+  "sfx": "chime",
+  "t": "predict",
+  "db": -25
+ },
+ {
+  "sfx": "type",
+  "t": "tool",
+  "db": -27,
+  "args": {
+   "d": 2.2
+  }
+ },
+ {
+  "sfx": "tap",
+  "t": "likh",
+  "db": -21
+ },
+ {
+  "sfx": "error",
+  "t": "norun",
+  "db": -22
+ },
+ {
+  "sfx": "swoosh",
+  "t": "tools",
+  "db": -24
+ },
+ {
+  "sfx": "tap",
+  "t": "detect",
+  "db": -22
+ },
+ {
+  "sfx": "swoosh",
+  "t": "actual",
+  "db": -24
+ },
+ {
+  "sfx": "swoosh",
+  "t": "result",
+  "db": -25
+ },
+ {
+  "sfx": "swoosh",
+  "t": "back",
+  "db": -24
+ },
+ {
+  "sfx": "spark",
+  "t": "loop",
+  "db": -25
+ },
+ {
+  "sfx": "chime",
+  "t": "complete",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "l",
+  "db": -22
+ },
+ {
+  "sfx": "tap",
+  "t": "plus",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "h",
+  "db": -22
+ },
+ {
+  "sfx": "chime",
+  "t": "a",
+  "db": -21
+ },
+ {
+  "sfx": "swoosh",
+  "t": 55.0,
+  "db": -27
+ },
+ {
+  "sfx": "pop",
+  "t": "partly",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "interface",
+  "db": -23
+ },
+ {
+  "sfx": "tap",
+  "t": "terminal",
+  "db": -24
+ },
+ {
+  "sfx": "tap",
+  "t": "desktop",
+  "db": -24
+ },
+ {
+  "sfx": "pop",
+  "t": "hidden",
+  "db": -22
+ },
+ {
+  "sfx": "type",
+  "t": 57.2,
+  "db": -27,
+  "args": {
+   "d": 0.7
+  }
+ },
+ {
+  "sfx": "swoosh",
+  "t": "sdk-0.2",
+  "db": -25
+ },
+ {
+  "sfx": "swoosh",
+  "t": "comm",
+  "db": -25
+ },
+ {
+  "sfx": "pop",
+  "t": "codex",
+  "db": -21
+ },
+ {
+  "sfx": "pop",
+  "t": "chef",
+  "db": -23
+ },
+ {
+  "sfx": "pop",
+  "t": "kitchen",
+  "db": -23
+ },
+ {
+  "sfx": "error",
+  "t": "bina",
+  "db": -26
+ },
+ {
+  "sfx": "tick",
+  "t": "gas",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": "barten",
+  "db": -21
+ },
+ {
+  "sfx": "tick",
+  "t": "knife",
+  "db": -21
+ },
+ {
+  "sfx": "chime",
+  "t": "khana",
+  "db": -22
+ },
+ {
+  "sfx": "pop",
+  "t": "counter",
+  "db": -23
+ }
+]

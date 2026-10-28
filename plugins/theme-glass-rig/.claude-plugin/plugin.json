@@ -1,0 +1,10 @@
+{
+  "name": "theme-glass-rig",
+  "version": "1.0.0",
+  "description": "Reel theme: glass rig. Hard cuts between the speaker full screen (real background kept) and full-screen frosted-glass pages over a deep ink background with drifting coral and blue light, glowing connectors with light pulses, token streams, code panels and glass nodes; pages come into focus from a blur; chill-trap music bed.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "ai", "llm", "agents", "glassmorphism", "explainer", "dark"]
+}

@@ -1,10 +1,9 @@
-// Theme: GLASS RIG. Hard cuts between the speaker (full screen, real background, untouched) and full-screen
-// "frosted glass" pages: deep ink background with two slow-drifting light blobs (warm coral + cool blue) and grain,
-// frosted glass cards, glowing connectors with flowing light, a token stream, chat bubbles, a looping cycle and
-// clean Manrope type with Fira Code for code. No purple.
+// Theme: ORANGE BOARD. Hard cuts between the speaker (full screen, real background, untouched) and full-screen
+// whiteboard pages: warm white board with an orange dot grid, clean white cards with soft shadows, connectors with a
+// running light pulse, an LLM token stream, light code panels and Manrope type with Fira Code for code. No purple.
 //   talk - the camera shot full screen; only captions on top (no banners, no plates)
 //   page - the page comes into focus: it fades in from a heavy blur and a slight zoom, and blurs away at the end
-// Captions: Manrope 800; the spoken word sits on a coral pill.
+// Captions: Manrope 800; the spoken word sits on an orange pill. Note: WHITE = main ink colour, INK = board white.
 import React from 'react';
 import {AbsoluteFill, OffthreadVideo, staticFile, useCurrentFrame, Easing, Img} from 'remotion';
 import '@fontsource/manrope/500.css';
@@ -14,8 +13,9 @@ import '@fontsource/fira-code/400.css';
 import '@fontsource/fira-code/600.css';
 import {FPS, Data, Scene, clamp, lerp, ease, win, useT, springAt} from '../core';
 
-export const INK = '#0A0D14', WHITE = '#F4F6FA', MUTED = '#9AA3B5', DIM = '#59627A', GLASS = 'rgba(255,255,255,0.07)', EDGE = 'rgba(255,255,255,0.16)';
-export const CORAL = '#E8836A', BLUE = '#6F8BFF', MINT = '#5EE6B0', AMBER = '#FFC857', RED = '#FF5C6C', CODEBG = 'rgba(5,7,12,0.72)';
+// on the whiteboard: WHITE is the main ink colour and INK is the board colour (kept for API compatibility)
+export const INK = '#FFFFFF', WHITE = '#1F1D24', MUTED = '#6E6872', DIM = '#BDB6BE', GLASS = '#FFFFFF', EDGE = '#EEDFD6', BOARD = '#FFFDFB', DOTC = '#F3B08F';
+export const CORAL = '#E8622F', BLUE = '#3D5AFE', MINT = '#0F9F74', AMBER = '#D98A00', RED = '#E5484D', CODEBG = '#FFF7F1';
 export const SANS = 'Manrope', MONO = 'Fira Code';
 export const W = 1080, H = 1920;
 export const pop = (f: number, t0: number) => springAt(f, t0, {damping: 14, stiffness: 190, mass: 0.7});
@@ -46,9 +46,9 @@ export const Txt: React.FC<{size?: number; color?: string; font?: string; w?: nu
 export const Glass: React.FC<{x: number; y: number; w: number; h?: number; t0: number; children?: React.ReactNode; tint?: string; pad?: number; style?: React.CSSProperties}> = ({x, y, w, h, t0, children, tint, pad = 28, style}) => {
   const f = useCurrentFrame(); if (f / FPS < t0) return null; const p = pop(f, t0);
   return <div style={{position: 'absolute', left: x, top: y, width: w, height: h, transform: `translateY(${(1 - p) * 40}px) scale(${0.94 + 0.06 * p})`, opacity: clamp(p * 1.5),
-    background: tint ? `linear-gradient(160deg, ${tint}2E, rgba(255,255,255,0.05))` : `linear-gradient(160deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04))`,
-    border: `1.5px solid ${tint ? `${tint}88` : EDGE}`, borderRadius: 32, backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)',
-    boxShadow: `inset 0 1px 0 rgba(255,255,255,.18), 0 30px 60px rgba(0,0,0,.45)${tint ? `, 0 0 50px ${tint}22` : ''}`, padding: pad, boxSizing: 'border-box', ...style}}>{children}</div>;
+    background: tint ? `linear-gradient(160deg, ${tint}12, #FFFFFF 70%)` : '#FFFFFF',
+    border: `2px solid ${tint ? `${tint}66` : EDGE}`, borderRadius: 32,
+    boxShadow: `0 18px 40px rgba(120,60,20,.10), 0 2px 0 rgba(255,255,255,1) inset`, padding: pad, boxSizing: 'border-box', ...style}}>{children}</div>;
 };
 
 /** pill */
@@ -74,9 +74,9 @@ export const Link: React.FC<{x1: number; y1: number; x2: number; y2: number; t0:
   const d = `M ${x1} ${y1} Q ${mx} ${my} ${x2} ${y2}`; const a = Math.atan2(y2 - my, x2 - mx); const hs = 20;
   const on = flow && t >= flow[0] && t <= flow[1]; const p = on ? ((t - flow![0]) * 0.9) % 1 : 0;
   return <svg width={W} height={H} style={{position: 'absolute', left: 0, top: 0, overflow: 'visible', pointerEvents: 'none'}}>
-    <path d={d} stroke={color} strokeOpacity={0.35} strokeWidth={sw + 6} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - k} style={{filter: 'blur(4px)'}} />
+    
     <path d={d} stroke={color} strokeWidth={sw} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray="1 1" strokeDashoffset={1 - k} />
-    {on && <path d={d} stroke={WHITE} strokeWidth={sw + 2} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray="0.08 0.92" strokeDashoffset={-p} style={{filter: `drop-shadow(0 0 10px ${color})`}} />}
+    {on && <path d={d} stroke={color} strokeWidth={sw + 4} fill="none" strokeLinecap="round" pathLength={1} strokeDasharray="0.08 0.92" strokeDashoffset={-p} style={{filter: `drop-shadow(0 0 10px ${color})`}} />}
     {head && k > 0.95 && <path d={`M ${x2} ${y2} L ${x2 - hs * Math.cos(a - 0.5)} ${y2 - hs * Math.sin(a - 0.5)} M ${x2} ${y2} L ${x2 - hs * Math.cos(a + 0.5)} ${y2 - hs * Math.sin(a + 0.5)}`} stroke={color} strokeWidth={sw} strokeLinecap="round" fill="none" />}
   </svg>;
 };
@@ -85,9 +85,9 @@ export const Link: React.FC<{x1: number; y1: number; x2: number; y2: number; t0:
 export type CodeLine = {at: number; text: React.ReactNode; hl?: [number, number]; color?: string};
 export const Code: React.FC<{x: number; y: number; w: number; t0: number; title?: string; lines: CodeLine[]; size?: number; tint?: string}> = ({x, y, w, t0, title, lines, size = 32, tint = BLUE}) => {
   const f = useCurrentFrame(); const t = f / FPS; if (t < t0) return null; const p = pop(f, t0);
-  return <div style={{position: 'absolute', left: x, top: y, width: w, transform: `translateY(${(1 - p) * 40}px)`, opacity: clamp(p * 1.5), background: CODEBG, border: `1.5px solid ${EDGE}`, borderRadius: 26,
-    backdropFilter: 'blur(20px)', boxShadow: `0 30px 60px rgba(0,0,0,.5), 0 0 40px ${tint}1A`, overflow: 'hidden'}}>
-    {title && <div style={{padding: '14px 24px', borderBottom: `1.5px solid ${EDGE}`, fontFamily: MONO, fontSize: 22, color: MUTED}}>{title}</div>}
+  return <div style={{position: 'absolute', left: x, top: y, width: w, transform: `translateY(${(1 - p) * 40}px)`, opacity: clamp(p * 1.5), background: CODEBG, border: `2px solid ${CORAL}55`, borderRadius: 26,
+    boxShadow: '0 18px 40px rgba(120,60,20,.10)', overflow: 'hidden'}}>
+    {title && <div style={{padding: '14px 24px', borderBottom: `2px solid ${CORAL}33`, fontFamily: MONO, fontSize: 22, color: MUTED}}>{title}</div>}
     <div style={{padding: '16px 26px 20px'}}>
       {lines.map((l, i) => {
         if (t < l.at) return <div key={i} style={{height: size * 1.55}} />;
@@ -111,7 +111,7 @@ export const Mover: React.FC<{x1: number; y1: number; x2: number; y2: number; t0
 export const Tokens: React.FC<{t0: number; tokens: string[]; rate?: number; size?: number; color?: string; cursor?: boolean}> = ({t0, tokens, rate = 6, size = 34, color = WHITE, cursor = true}) => {
   const f = useCurrentFrame(); const t = f / FPS; if (t < t0) return null; const n = Math.min(tokens.length, Math.floor((t - t0) * rate) + 1);
   return <div style={{display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center'}}>
-    {tokens.slice(0, n).map((tk, i) => <span key={i} style={{fontFamily: MONO, fontSize: size, color, padding: '2px 8px', borderRadius: 8, background: i === n - 1 && n < tokens.length ? `${CORAL}33` : 'rgba(255,255,255,0.06)'}}>{tk}</span>)}
+    {tokens.slice(0, n).map((tk, i) => <span key={i} style={{fontFamily: MONO, fontSize: size, color, padding: '2px 8px', borderRadius: 8, background: i === n - 1 && n < tokens.length ? `${CORAL}33` : 'rgba(0,0,0,0.05)'}}>{tk}</span>)}
     {cursor && n < tokens.length && <span style={{width: 4, height: size, background: CORAL, opacity: Math.floor(f / 8) % 2 ? 1 : 0.2}} />}
   </div>;
 };
@@ -126,18 +126,13 @@ export const Head: React.FC<{t0: number; label: string; title: React.ReactNode; 
 };
 
 // ------------------------------------------------------------------ frame
-const Backdrop: React.FC = () => {
-  const t = useT();
-  return <AbsoluteFill style={{background: INK, overflow: 'hidden'}}>
-    <div style={{position: 'absolute', left: -260 + 60 * Math.sin(t * 0.25), top: -120 + 50 * Math.cos(t * 0.2), width: 900, height: 900, borderRadius: 450, background: CORAL, opacity: 0.32, filter: 'blur(160px)'}} />
-    <div style={{position: 'absolute', left: 420 + 60 * Math.cos(t * 0.22), top: 1050 + 60 * Math.sin(t * 0.18), width: 950, height: 950, borderRadius: 475, background: BLUE, opacity: 0.32, filter: 'blur(170px)'}} />
-    <div style={{position: 'absolute', left: 300, top: 600, width: 500, height: 500, borderRadius: 250, background: MINT, opacity: 0.06, filter: 'blur(140px)'}} />
-    <svg width={W} height={H} style={{position: 'absolute', inset: 0, opacity: 0.35, mixBlendMode: 'overlay'}}>
-      <filter id="g"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3" /><feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.25 0" /></filter>
-      <rect width={W} height={H} filter="url(#g)" />
-    </svg>
-  </AbsoluteFill>;
-};
+const Backdrop: React.FC = () => (
+  <AbsoluteFill style={{background: BOARD}}>
+    <AbsoluteFill style={{backgroundImage: `radial-gradient(${DOTC} 2.6px, transparent 3px)`, backgroundSize: '36px 36px', backgroundPosition: '18px 18px', opacity: 0.75}} />
+    <AbsoluteFill style={{background: 'radial-gradient(ellipse 85% 60% at 50% 40%, rgba(255,255,255,.55), transparent 75%)'}} />
+    <AbsoluteFill style={{boxShadow: 'inset 0 0 160px rgba(232,98,47,.08)'}} />
+  </AbsoluteFill>
+);
 
 const pageAmt = (t: number, cfg: Config) => {
   for (const c of cfg.cuts) if (c.m === 'page' && t >= c.a - 0.001 && t < c.b) {
@@ -155,8 +150,8 @@ const Captions: React.FC<{data: Data; onPage: boolean}> = ({data, onPage}) => {
       {ln.map((w, j) => {
         const shown = t >= w.t - 0.03; const active = shown && t < w.e - 0.03; const p = shown ? pop(f, w.t - 0.03) : 0;
         return <span key={j} style={{display: 'inline-block', margin: '0 4px', padding: '0 12px', borderRadius: 16, opacity: shown ? 1 : 0.4, transform: `translateY(${(1 - p) * 8}px) scale(${active ? 1.04 : 1})`,
-          color: active ? INK : w.k ? '#FFD3C4' : WHITE, background: active ? CORAL : 'transparent',
-          textShadow: active ? 'none' : '0 0 4px #000, 0 3px 0 #000, 0 0 18px rgba(0,0,0,.9)'}}>{w.w}</span>;
+          color: active ? '#FFFFFF' : onPage ? (w.k ? CORAL : WHITE) : (w.k ? '#FFD3C4' : '#FFFFFF'), background: active ? CORAL : 'transparent',
+          textShadow: active || onPage ? 'none' : '0 0 4px #000, 0 3px 0 #000, 0 0 18px rgba(0,0,0,.9)'}}>{w.w}</span>;
       })}
     </div>)}
   </div>;

@@ -1,0 +1,23 @@
+{
+  "name": "theme-orange-board",
+  "version": "1.0.0",
+  "description": "Reel theme: orange board. Hard cuts between the speaker full screen (real background kept) and full-screen whiteboard pages with an orange dot grid, white cards, connectors with a light pulse, token streams, light code panels and logo nodes; pages come into focus from a blur; chill-trap music bed.",
+  "author": {
+    "name": "Saurav Jha",
+    "url": "https://srvjha.in"
+  },
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": [
+    "reels",
+    "video",
+    "remotion",
+    "ai",
+    "llm",
+    "agents",
+    "whiteboard",
+    "explainer",
+    "light"
+  ]
+}

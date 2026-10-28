@@ -97,9 +97,9 @@
       "description": "Theme: black dot-grid explainer with hard cuts between the speaker (real background) and full-screen pages of thread lanes, callback queues, code panels and an event-loop ring, dark techno music."
     },
     {
-      "name": "theme-glass-rig",
-      "source": "./plugins/theme-glass-rig",
-      "description": "Theme: frosted-glass explainer with hard cuts between the speaker (real background) and full-screen pages of glass nodes, glowing connectors, token streams and code panels over drifting coral and blue light, chill-trap music."
+      "name": "theme-orange-board",
+      "source": "./plugins/theme-orange-board",
+      "description": "Theme: whiteboard explainer with an orange dot grid and hard cuts between the speaker (real background) and full-screen pages of white cards, connectors, token streams and code panels, chill-trap music."
     },
     {
       "name": "reel-classic",

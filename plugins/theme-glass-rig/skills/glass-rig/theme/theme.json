@@ -1,5 +1,0 @@
-{
-  "name": "glass-rig",
-  "npm": ["@fontsource/manrope@^5", "@fontsource/fira-code@^5"],
-  "captions": {"maxc": 24, "lines": 2}
-}

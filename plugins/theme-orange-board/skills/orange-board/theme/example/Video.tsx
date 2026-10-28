@@ -1,5 +1,5 @@
-// What is a harness in AI. Theme: glass-rig. Not part of a series.
-// Hard cuts: talk = speaker full screen with his real background; page = full-screen frosted-glass explainer.
+// What is a harness in AI. Theme: orange-board. Not part of a series.
+// Hard cuts: talk = speaker full screen with his real background; page = full-screen whiteboard explainer.
 // Page content lives between y 140 and y 1540 (captions below). Logos: Claude, Codex (user supplied).
 import React from 'react';
 import {Scene, clamp, lerp, ease, useT} from './core';

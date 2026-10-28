@@ -22,7 +22,7 @@ Built while editing the **Building Backend Systems** series.
 | **receipt-tape** | Dark desk explainer: hard cuts between the speaker and full-screen pages of printing receipt slips, data-file cards, rubber stamps, power-failure blackouts, ambient music |
 | **packet-lab** | Light network lab: hard cuts between the speaker and full-screen pages of client/server devices, travelling packets, HTTP/JSON code panels, a step tracker, house music |
 | **dotgrid-dark** | Black dot grid: hard cuts between the speaker and full-screen pages of thread lanes, callback queue, code panels and an event-loop ring, dark techno |
-| **glass-rig** | Frosted glass: hard cuts between the speaker and full-screen pages of glass nodes, glowing connectors, token streams and code panels over drifting coral and blue light, chill-trap |
+| **orange-board** | Whiteboard with orange dots: hard cuts between the speaker and full-screen pages of white cards, connectors, token streams and code panels, chill-trap |
 | **void-index** | List and countdown reels: near-black with blue, cyan and brown glow, 1..N progress rail, countdown ring, item cards with outlined numbers |
 | **chat-wall** | Messenger look: doodle chat wallpaper, teal bars, chat-bubble captions with ticks, phone mockups, cut-out speaker |
 | **saffron-ledger** | Cream paper, saffron and India green, stamped cards with hard shadows, receipt captions, Phosphor icons, official logos inline with the title |
@@ -46,7 +46,7 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-receipt-tape.jpg" width="720" alt="receipt-tape theme frames"></p>
 <p align="center"><img src="demo/theme-packet-lab.jpg" width="720" alt="packet-lab theme frames"></p>
 <p align="center"><img src="demo/theme-dotgrid-dark.jpg" width="720" alt="dotgrid-dark theme frames"></p>
-<p align="center"><img src="demo/theme-glass-rig.jpg" width="720" alt="glass-rig theme frames"></p>
+<p align="center"><img src="demo/theme-orange-board.jpg" width="720" alt="orange-board theme frames"></p>
 
 ## Install
 
@@ -58,7 +58,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-glass-rig`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-orange-board`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

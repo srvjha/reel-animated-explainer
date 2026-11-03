@@ -1,0 +1,10 @@
+{
+  "name": "theme-card-catalog",
+  "version": "1.0.0",
+  "description": "Reel theme: card catalog. Split layout with a warm library-desk explainer on top (index cards, typewriter text, wooden catalog drawer, vector chips, a PDF page cut into chunk cards) and the speaker below with his real background; quiet library jazz music bed.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "rag", "ai", "llm", "split layout", "paper", "explainer"]
+}

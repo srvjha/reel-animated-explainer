@@ -102,6 +102,11 @@
       "description": "Theme: whiteboard explainer with an orange dot grid and hard cuts between the speaker (real background) and full-screen pages of white cards, connectors, token streams and code panels, chill-trap music."
     },
     {
+      "name": "theme-card-catalog",
+      "source": "./plugins/theme-card-catalog",
+      "description": "Theme: split layout with a warm library-desk explainer on top (index cards, typewriter, catalog drawer, vector chips) and the speaker below, library jazz music."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

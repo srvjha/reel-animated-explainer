@@ -1,0 +1,5 @@
+{
+  "name": "card-catalog",
+  "npm": ["@fontsource/dm-serif-display@^5", "@fontsource/courier-prime@^5", "@fontsource/work-sans@^5"],
+  "captions": {"maxc": 24, "lines": 2}
+}

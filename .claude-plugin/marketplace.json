@@ -107,6 +107,11 @@
       "description": "Theme: split layout with a warm library-desk explainer on top (index cards, typewriter, catalog drawer, vector chips) and the speaker below, library jazz music."
     },
     {
+      "name": "theme-night-blueprint",
+      "source": "./plugins/theme-night-blueprint",
+      "description": "Theme: black dotted blueprint explainer with hard cuts between the speaker (real background) and full-screen pages of outlined boxes, self-drawing wires, gauges and charts, synthwave music."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

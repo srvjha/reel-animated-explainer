@@ -1,0 +1,10 @@
+{
+  "name": "theme-night-blueprint",
+  "version": "1.0.0",
+  "description": "Reel theme: night blueprint. Hard cuts between the speaker full screen (real background kept) and full-screen black dotted blueprint pages: thin outlined boxes with corner ticks, self-drawing wires, gauges, charts; cyan for functional, amber for non-functional; pages revealed by a scan line; synthwave music bed.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "system design", "requirements", "blueprint", "dark", "explainer"]
+}

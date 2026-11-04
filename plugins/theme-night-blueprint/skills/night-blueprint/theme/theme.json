@@ -1,0 +1,5 @@
+{
+  "name": "night-blueprint",
+  "npm": ["@fontsource/outfit@^5", "@fontsource/geist-mono@^5"],
+  "captions": {"maxc": 22, "lines": 2}
+}

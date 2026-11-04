@@ -1,5 +1,5 @@
 // Functional vs non-functional requirements. Theme: night-blueprint. Not part of a series.
-// Hard cuts: talk = speaker full screen with his real background; page = full-screen black dotted blueprint pages.
+// Hard cuts: talk = speaker cut out (background removed) on the same dotted grid; page = full-screen black dotted blueprint pages.
 // On-screen text is English only. Numbers (ms, %, users) are illustrative.
 import React from 'react';
 import {Scene, clamp, lerp, ease, useT} from './core';
@@ -12,6 +12,7 @@ const T = (w: string, n = 1) => { let c = 0; for (const x of ws) if (x.w.toLower
 const END = data.duration;
 
 export const cfg: Config = {
+  speaker: 'talk.mp4',
   cuts: [
     {a: 0, b: 6.3, m: 'talk'},
     {a: 6.3, b: 14.3, m: 'page'},

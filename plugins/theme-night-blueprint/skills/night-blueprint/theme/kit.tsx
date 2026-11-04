@@ -5,6 +5,8 @@
 //   talk - the camera shot full screen; only captions on top (no banners, no plates)
 //   page - a bright scan line sweeps down and reveals the page; at the end it sweeps back up
 // Captions: Outfit 800; the spoken word sits on a cyan pill.
+// cfg.speaker: talk video with the background replaced by the dotted grid. Build it with reel-studio cutout (matte + speaker.webm),
+// then flatten it over a still of the grid with ffmpeg (Remotion's compositor drops VP9 alpha here, so pre-compose).
 import React from 'react';
 import {AbsoluteFill, OffthreadVideo, staticFile, useCurrentFrame, Easing, Img} from 'remotion';
 import '@fontsource/outfit/400.css';
@@ -20,7 +22,7 @@ export const SANS = 'Outfit', MONO = 'Geist Mono';
 export const W = 1080, H = 1920;
 export const pop = (f: number, t0: number) => springAt(f, t0, {damping: 15, stiffness: 200, mass: 0.7});
 
-export type Config = {cuts: {a: number; b: number; m: 'talk' | 'page'}[]; overlays?: React.FC[]};
+export type Config = {cuts: {a: number; b: number; m: 'talk' | 'page'}[]; overlays?: React.FC[]; speaker?: string};  // speaker: optional pre-composited talk video (cut-out speaker over the dotted grid), used instead of src.mp4
 
 // ------------------------------------------------------------------ primitives
 export const Icon: React.FC<{name: string; size?: number; color?: string; style?: React.CSSProperties}> = ({name, size = 64, color = WHITE, style}) => {
@@ -146,7 +148,7 @@ const Captions: React.FC<{data: Data; onPage: boolean}> = ({data, onPage}) => {
 export const Frame: React.FC<{data: Data; cfg: Config; scenes: Scene[]}> = ({data, cfg, scenes}) => {
   const t = useT(); const k = pageAmt(t, cfg); const yLine = k * H;
   return <AbsoluteFill style={{background: '#000'}}>
-    <OffthreadVideo src={staticFile('src.mp4')} muted style={{width: W, height: H}} />
+    <OffthreadVideo src={staticFile(cfg.speaker || 'src.mp4')} muted style={{width: W, height: H}} />
     {k > 0.001 && <AbsoluteFill style={{clipPath: k < 0.999 ? `inset(0 0 ${H - yLine}px 0)` : undefined}}>
       <Grid />
       {scenes.map((s, i) => {

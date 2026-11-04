@@ -28,3 +28,6 @@ Pass `THEME_DIR` to reel-studio's `prepare.sh`. The full reference reel is `them
 - No banners or stamp plates.
 - Show technically precise wording on screen when the script is loose, and tell the user.
 - Keep titles on one line; never leave a single word alone on a line.
+
+## Optional: speaker on the same dotted grid
+If the user wants his background to match the pages: run reel-studio `cutout/matte.py` on the talk segments and `cutout/build_speaker.py` to get `speaker.webm` (if MediaPipe's `solutions` API is missing, drop the MediaPipe parts and keep ISNet only, plus a bottom fade to hide the desk). Then flatten it over a still of the grid (`ffmpeg -loop 1 -i talkbg.png -c:v libvpx-vp9 -i speaker.webm -filter_complex overlay=shortest=1 ... talk.mp4`) and set `cfg.speaker: 'talk.mp4'`. Pre-composing avoids Remotion dropping the VP9 alpha channel.

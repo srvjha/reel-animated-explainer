@@ -117,6 +117,11 @@
       "description": "Theme: strict black and white ride-hailing look with B&W stock clips, the speaker cut out on a black street map, and white map pages that slide up like an app sheet (cars, pins, hexagon grids, ring search), night-drive minimal music."
     },
     {
+      "name": "theme-red-signal",
+      "source": "./plugins/theme-red-signal",
+      "description": "Theme: red and black streaming-player look for voice-over reels: graded stock clips and red-dotted pages revealed by a red ribbon (player mock, signal bars, quality chunks, quality ladder)."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

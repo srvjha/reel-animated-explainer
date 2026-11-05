@@ -1,0 +1,10 @@
+{
+  "name": "theme-red-signal",
+  "version": "1.0.0",
+  "description": "Reel theme: red signal. Streaming-player look in red and black for voice-over reels. Hard cuts between graded stock clips and near-black pages with a red dot grid, revealed by a slanted red ribbon: video player mock (blur, buffer, quality badge), signal bars, chunk blocks shaded by quality, quality ladder, Bebas Neue titles.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "streaming", "video quality", "abr", "red", "dark", "voice-over", "explainer"]
+}

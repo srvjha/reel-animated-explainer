@@ -1,0 +1,5 @@
+{
+  "name": "red-signal",
+  "npm": ["@fontsource/bebas-neue@^5", "@fontsource/inter@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 22, "lines": 2}
+}

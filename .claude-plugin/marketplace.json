@@ -112,6 +112,11 @@
       "description": "Theme: black dotted blueprint explainer with hard cuts between the speaker (real background) and full-screen pages of outlined boxes, self-drawing wires, gauges and charts, synthwave music."
     },
     {
+      "name": "theme-mono-map",
+      "source": "./plugins/theme-mono-map",
+      "description": "Theme: strict black and white ride-hailing look with B&W stock clips, the speaker cut out on a black street map, and white map pages that slide up like an app sheet (cars, pins, hexagon grids, ring search), night-drive minimal music."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

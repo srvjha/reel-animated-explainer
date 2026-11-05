@@ -1,0 +1,10 @@
+{
+  "name": "theme-mono-map",
+  "version": "1.0.0",
+  "description": "Reel theme: mono map. Strict black and white ride-hailing look. Hard cuts between B&W stock clips, the speaker cut out on a black street map, and white map pages that slide up like an app bottom sheet: top-down cars, pickup pins, H3-style hexagon grids with ring search, app cards; night-drive minimal music.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "system design", "maps", "geospatial", "black and white", "uber", "explainer"]
+}

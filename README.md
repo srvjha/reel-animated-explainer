@@ -25,6 +25,7 @@ Built while editing the **Building Backend Systems** series.
 | **orange-board** | Whiteboard with orange dots: hard cuts between the speaker and full-screen pages of white cards, connectors, token streams and code panels, chill-trap |
 | **card-catalog** | Split layout: library desk on top (index cards, typewriter, catalog drawer, vector chips) with the speaker below, library jazz |
 | **night-blueprint** | Black dotted blueprint: hard cuts between the speaker and full-screen pages of outlined boxes, self-drawing wires, gauges and charts, synthwave |
+| **mono-map** | Black and white ride-hailing look: B&W stock clips, cut-out speaker on a black street map, white map pages sliding up like an app sheet with cars, pins and hexagon grids, night-drive minimal |
 | **void-index** | List and countdown reels: near-black with blue, cyan and brown glow, 1..N progress rail, countdown ring, item cards with outlined numbers |
 | **chat-wall** | Messenger look: doodle chat wallpaper, teal bars, chat-bubble captions with ticks, phone mockups, cut-out speaker |
 | **saffron-ledger** | Cream paper, saffron and India green, stamped cards with hard shadows, receipt captions, Phosphor icons, official logos inline with the title |
@@ -51,6 +52,7 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-orange-board.jpg" width="720" alt="orange-board theme frames"></p>
 <p align="center"><img src="demo/theme-card-catalog.jpg" width="720" alt="card-catalog theme frames"></p>
 <p align="center"><img src="demo/theme-night-blueprint.jpg" width="720" alt="night-blueprint theme frames"></p>
+<p align="center"><img src="demo/theme-mono-map.jpg" width="720" alt="mono-map theme frames"></p>
 
 ## Install
 
@@ -62,7 +64,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-orange-board`, `theme-card-catalog`, `theme-night-blueprint`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-orange-board`, `theme-card-catalog`, `theme-night-blueprint`, `theme-mono-map`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

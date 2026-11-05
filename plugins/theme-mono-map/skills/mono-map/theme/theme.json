@@ -1,0 +1,5 @@
+{
+  "name": "mono-map",
+  "npm": ["@fontsource/inter-tight@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 22, "lines": 2}
+}

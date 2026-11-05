@@ -21,7 +21,7 @@ export const W = 1080, H = 1920;
 export const pop = (f: number, t0: number) => springAt(f, t0, {damping: 15, stiffness: 200, mass: 0.7});
 
 export type Cut = {a: number; b: number; m: 'talk' | 'page' | 'clip'; src?: string; from?: number; zoom?: number; pos?: string};
-export type Config = {cuts: Cut[]; overlays?: React.FC[]; speaker?: string};
+export type Config = {cuts: Cut[]; overlays?: React.FC[]; speaker?: string; capSkip?: number};  // capSkip: no captions before this time (use when an overlay shows the hook line big)
 
 // ------------------------------------------------------------------ primitives
 export const Icon: React.FC<{name: string; size?: number; color?: string; style?: React.CSSProperties}> = ({name, size = 64, color = INK, style}) => {
@@ -201,6 +201,6 @@ export const Frame: React.FC<{data: Data; cfg: Config; scenes: Scene[]}> = ({dat
       })}
       {k < 0.999 && <div style={{position: 'absolute', left: W / 2 - 60, top: 18, width: 120, height: 10, borderRadius: 5, background: SOFT}} />}
     </div>}
-    <Captions data={data} mode={k > 0.5 ? 'page' : (c && c.m === 'clip' ? 'clip' : 'talk')} />
+    {t >= (cfg.capSkip || 0) && <Captions data={data} mode={k > 0.5 ? 'page' : (c && c.m === 'clip' ? 'clip' : 'talk')} />}
   </AbsoluteFill>;
 };

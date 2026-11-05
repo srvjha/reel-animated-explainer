@@ -2,9 +2,9 @@
 // Hard cuts: clip = B&W stock footage (Pexels, free license), talk = speaker cut out on the black street map,
 // page = white map sheet with the diagrams. On-screen text is English. Hex IDs, distances, ETAs and counts are illustrative.
 import React from 'react';
-import {Img, staticFile} from 'remotion';
+import {Img, staticFile, useCurrentFrame} from 'remotion';
 import {clamp, lerp, ease, useT, Counter} from './core';
-import {Config, Head, Card, Tag, Car, Pin, Wire, Route, HexGrid, hexXY, hexPath, Icon, At, Center, Appear, PopIn, Txt,
+import {Config, pop, Head, Card, Tag, Car, Pin, Wire, Route, HexGrid, hexXY, hexPath, Icon, At, Center, Appear, PopIn, Txt,
   INK, PAPER, GREY, SOFT, LIGHT, MONO, W} from './theme/kit';
 import data from './data.json';
 
@@ -14,6 +14,7 @@ const END = (data as any).duration;
 
 export const cfg: Config = {
   speaker: 'talk.mp4',
+  capSkip: 2.9,
   cuts: [
     {a: 0, b: 2.95, m: 'clip', src: 'clips/car.mp4', from: 2.0},
     {a: 2.95, b: 6.75, m: 'clip', src: 'clips/phone.mp4', from: 0.3},
@@ -39,12 +40,25 @@ export const cfg: Config = {
 const Small: React.FC<{children: React.ReactNode; y?: number}> = ({children, y = 1530}) => <At x={80} y={y}><Txt size={22} font={MONO} w={500} color={GREY}>{children}</Txt></At>;
 
 // ------------------------------------------------------------------ clip overlays (sit under the page sheet)
+// hook: the first caption page shown big, mid-screen, with the Uber icon inline before "Uber" (regular captions skip it)
 const Hook: React.FC = () => {
-  const t = useT(); if (t > 2.95) return null;
-  return <>
-    <Center y={330}><PopIn t0={T('uber') || 0.8}><Img src={staticFile('uber.png')} style={{width: 150, height: 150, borderRadius: 30, boxShadow: '0 0 0 3px rgba(255,255,255,.85)'}} /></PopIn></Center>
-    <Center y={530}><Appear t0={0.1}><Txt size={58} w={800} color={PAPER} style={{letterSpacing: -1.5, textShadow: '0 4px 30px rgba(0,0,0,.8)'}}>How Uber finds the nearest driver</Txt></Appear></Center>
-  </>;
+  const f = useCurrentFrame(); const t = f / 30; if (t > 2.95) return null;
+  const words = (data as any).pages[0].words as {w: string; t: number; e: number}[];
+  const lines = [words.slice(0, 4), words.slice(4)];
+  return <div style={{position: 'absolute', left: 0, right: 0, top: 700, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6}}>
+    {lines.map((ln, i) => <div key={i} style={{display: 'flex', alignItems: 'center', whiteSpace: 'nowrap'}}>
+      {ln.map((w, j) => {
+        const shown = t >= w.t - 0.05; const active = shown && t < w.e - 0.03; const p = shown ? pop(f, w.t - 0.05) : 0;
+        const isUber = w.w.toLowerCase().startsWith('uber');
+        return <React.Fragment key={j}>
+          {isUber && <div style={{width: 78, height: 78, margin: '0 4px 0 8px', transform: `scale(${0.4 + 0.6 * p})`, opacity: shown ? 1 : 0}}><Img src={staticFile('uber.png')} style={{width: 78, height: 78, borderRadius: 17, boxShadow: '0 0 0 3px rgba(255,255,255,.9)'}} /></div>}
+          <span style={{display: 'inline-block', margin: '0 5px', padding: '0 16px', borderRadius: 18, fontFamily: 'Inter Tight', fontWeight: 800, fontSize: 76, lineHeight: 1.25, letterSpacing: -1.5,
+            opacity: shown ? 1 : 0.35, transform: `translateY(${(1 - p) * 12}px)`, color: active ? INK : PAPER, background: active ? PAPER : 'transparent',
+            textShadow: active ? 'none' : '0 0 6px #000, 0 4px 0 #000, 0 0 28px rgba(0,0,0,.95)'}}>{w.w}</span>
+        </React.Fragment>;
+      })}
+    </div>)}
+  </div>;
 };
 const Found: React.FC = () => {
   const t = useT(); if (t < 2.95 || t > 6.75) return null; const t0 = T('mil') - 0.2;

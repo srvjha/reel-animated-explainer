@@ -18,6 +18,7 @@ Pass `THEME_DIR` to reel-studio's `prepare.sh`. Reference reel: `theme/example/V
 - Clip = full-screen, CSS grayscale + contrast, 8% push-in, top and bottom gradient. Put clip text in `cfg.overlays` (they render under the page sheet) and gate each overlay by time.
 - `Head` = mono chip label + one-line title at y 150 (size 80, about 20 characters max).
 - Content between y 300 and y 1560. Captions: page y 1610 (black, active word on black pill), talk y 1530, clip y 1480 (white, active word on white pill). `maxc 22`.
+- Hook: the example shows the first caption page big mid-screen with the logo inline (`Hook` overlay) and sets `cfg.capSkip` so regular captions start after it. Don't also add a separate title line.
 - On-screen text English; captions follow the spoken words. Label example numbers as illustrative.
 
 ## Components (`./theme/kit`)
@@ -32,6 +33,8 @@ Pass `THEME_DIR` to reel-studio's `prepare.sh`. Reference reel: `theme/example/V
 Free-license portrait clips (Pexels) downloaded through the user's browser, then scaled and cropped to 1080x1920 30 fps h264 in `public/clips/`. Colour clips are fine: the kit grades them to B&W.
 
 ## Sound
+The example reel used a Mixkit track ("Autofahren", Mauro Urbina, Mixkit free license) from 28 s in, written over `music.wav` after `mix_audio.py` (peak about -23 dB, sidechain ducked under the voice). Without one, the bed below is used.
+
 `sound.py`: night-drive minimal at 92 bpm (electric-piano minor 7ths, sub, indicator-tick hats, kick on 1 and 3, rim on 4, sparse plucks). SFX: `sheet`, `drop`, `ping`, `tap`, `hex`, `sonar`, `match`, `whoosh`, `pop`, `tick`.
 
 ## Do / don't

@@ -121,12 +121,12 @@ const StateMachine: React.FC = () => {
 // ------------------------------------------------------------------ 3. events + event-driven architecture (41.4 - 65.8)
 const Events: React.FC = () => {
   const t = useT();
-  const SX = 30, QX = 390, SVX = 750, Y = [230, 420, 610];
+  const SX = 24, QX = 390, SVX = 750, SW = 340, Y = [230, 420, 610];
   return <>
     <Head t0={41.5} label="CONCEPT 2" title="Every change is an event" />
-    <Node x={SX} y={Y[0]} w={300} icon="storefront" label="Restaurant app" t0={42.8} />
-    <Node x={SX} y={Y[1]} w={300} icon="moped" label="Rider app" t0={45.1} />
-    <Node x={SX} y={Y[2]} w={300} icon="credit-card" label="Payment" t0={51.0} />
+    <Node x={SX} y={Y[0]} w={SW} icon="storefront" label="Restaurant app" t0={42.8} />
+    <Node x={SX} y={Y[1]} w={SW} icon="moped" label="Rider app" t0={45.1} />
+    <Node x={SX} y={Y[2]} w={SW} icon="credit-card" label="Payment" t0={51.0} />
     <At x={SX + 10} y={Y[0] + 122}><Appear t0={43.5}><Tag size={20} solid={false}>order_accepted</Tag></Appear></At>
     <At x={SX + 10} y={Y[1] + 122}><Appear t0={45.5}><Tag size={20} solid={false}>picked_up</Tag></Appear></At>
     {t > 52.5 && <div style={{position: 'absolute', left: QX + 20, top: 230, width: 260, height: 490, borderRadius: 28, background: WHITE, border: `3px dashed ${RED}`, opacity: ease(t, 52.6, 0.4), boxSizing: 'border-box', padding: 18}}>
@@ -134,7 +134,7 @@ const Events: React.FC = () => {
       <Txt size={18} font={MONO} w={500} color={GREY} style={{textAlign: 'center'}}>event pipeline</Txt>
       {Array.from({length: 5}, (_, i) => <div key={i} style={{height: 54, borderRadius: 12, marginTop: 14, background: i < Math.floor((t - 52.8) * 2.2) % 6 ? PEACH : '#F7F2F0', border: `2px solid ${LINE}`}} />)}
     </div>}
-    {Y.map((y, i) => <Wire key={'i' + i} x1={SX + 300} y1={y + 55} x2={QX + 20} y2={300 + i * 150} t0={52.8 + i * 0.1} packets={[53.4 + i * 0.3, 55.0 + i * 0.3, 57.5 + i * 0.4, 60.2 + i * 0.3]} />)}
+    {Y.map((y, i) => <Wire key={'i' + i} x1={SX + SW} y1={y + 55} x2={QX + 20} y2={300 + i * 150} t0={52.8 + i * 0.1} packets={[53.4 + i * 0.3, 55.0 + i * 0.3, 57.5 + i * 0.4, 60.2 + i * 0.3]} />)}
     <Node x={SVX} y={Y[0]} w={300} icon="receipt" label="Order service" sub="updates status" t0={54.7} />
     <Node x={SVX} y={Y[1]} w={300} icon="bell" label="Notification" sub="messages you" t0={57.1} />
     <Node x={SVX} y={Y[2]} w={300} icon="chart-bar" label="Analytics" sub="saves data" t0={59.4} />

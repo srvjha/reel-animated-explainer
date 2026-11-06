@@ -1,0 +1,10 @@
+{
+  "name": "theme-tomato-app",
+  "version": "1.0.0",
+  "description": "Reel theme: tomato app. Warm food-delivery app look: the speaker opens full screen, then slides into the lower half while a cream explainer panel drops in on top. Designed phone tracking screen, state chips, service nodes with travelling event packets, toasts, stock clips inside the panel; speaker keeps his real background.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "system design", "food delivery", "state machine", "event driven", "split layout", "explainer"]
+}

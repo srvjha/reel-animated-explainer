@@ -122,6 +122,11 @@
       "description": "Theme: red and black streaming-player look for voice-over reels: graded stock clips and red-dotted pages revealed by a red ribbon (player mock, signal bars, quality chunks, quality ladder)."
     },
     {
+      "name": "theme-tomato-app",
+      "source": "./plugins/theme-tomato-app",
+      "description": "Theme: warm food-delivery app look; speaker opens full screen then slides below a cream explainer panel (phone tracking screen, state chips, event packets, stock clips in the panel)."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

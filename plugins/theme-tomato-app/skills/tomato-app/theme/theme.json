@@ -1,0 +1,5 @@
+{
+  "name": "tomato-app",
+  "npm": ["@fontsource/outfit@^5", "@fontsource/dm-mono@^5"],
+  "captions": {"maxc": 22, "lines": 2}
+}

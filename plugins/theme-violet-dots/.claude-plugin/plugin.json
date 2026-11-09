@@ -1,0 +1,10 @@
+{
+  "name": "theme-violet-dots",
+  "version": "1.0.0",
+  "description": "Reel theme: violet dots. Light dotted canvas with indigo and violet accents for AI and LLM topics. The speaker and a two-way window alternate with animated transitions: full-screen talk, then the explainer panel drops in on top while the speaker slides into the lower half. Chat app mock with token streaming, token chips, GPU core grid, meters, pipeline nodes with packets.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "ai", "llm", "system design", "streaming", "light", "dotted", "split layout"]
+}

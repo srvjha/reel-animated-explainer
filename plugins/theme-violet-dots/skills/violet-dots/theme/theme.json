@@ -1,0 +1,5 @@
+{
+  "name": "violet-dots",
+  "npm": ["@fontsource/space-grotesk@^5", "@fontsource/jetbrains-mono@^5"],
+  "captions": {"maxc": 22, "lines": 2}
+}

@@ -1,0 +1,10 @@
+{
+  "name": "theme-ember-ops",
+  "version": "1.0.0",
+  "description": "Reel theme: ember ops. Dark ops-console look with orange as the only accent and white type: hairline grid, ember glow, orange scan band revealing each full-screen page. Gauges, meters, a token bucket with reserve and release, flow nodes with packets, HTTP response cards and dark browser cards for real article screenshots with an orange highlighter.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "rate limiting", "llm", "gateway", "dark", "orange", "system design", "explainer"]
+}

@@ -30,6 +30,7 @@ Built while editing the **Building Backend Systems** series.
 | **tomato-app** | Warm food-delivery app look: full-screen opening, then a cream explainer panel on top with the speaker below; phone tracking screen, state chips, event packets |
 | **violet-dots** | Light dotted canvas for AI and LLM topics: talk and a two-way window alternate with animated transitions; chat streaming mock, tokens, GPU grid, meters |
 | **dev-desktop** | Personal workflow story on a desktop: camera and app windows swap with genie-style dock animations; sticky notes, terminal, spec.md, real browser screenshots |
+| **ember-ops** | Dark ops console with orange and white: scan-band page reveals, gauges, token bucket, HTTP cards, article screenshots with an orange highlighter |
 | **void-index** | List and countdown reels: near-black with blue, cyan and brown glow, 1..N progress rail, countdown ring, item cards with outlined numbers |
 | **chat-wall** | Messenger look: doodle chat wallpaper, teal bars, chat-bubble captions with ticks, phone mockups, cut-out speaker |
 | **saffron-ledger** | Cream paper, saffron and India green, stamped cards with hard shadows, receipt captions, Phosphor icons, official logos inline with the title |
@@ -61,6 +62,7 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-tomato-app.jpg" width="720" alt="tomato-app theme frames"></p>
 <p align="center"><img src="demo/theme-violet-dots.jpg" width="720" alt="violet-dots theme frames"></p>
 <p align="center"><img src="demo/theme-dev-desktop.jpg" width="720" alt="dev-desktop theme frames"></p>
+<p align="center"><img src="demo/theme-ember-ops.jpg" width="720" alt="ember-ops theme frames"></p>
 
 ## Install
 
@@ -72,7 +74,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-orange-board`, `theme-card-catalog`, `theme-night-blueprint`, `theme-mono-map`, `theme-red-signal`, `theme-tomato-app`, `theme-violet-dots`, `theme-dev-desktop`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-orange-board`, `theme-card-catalog`, `theme-night-blueprint`, `theme-mono-map`, `theme-red-signal`, `theme-tomato-app`, `theme-violet-dots`, `theme-dev-desktop`, `theme-ember-ops`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

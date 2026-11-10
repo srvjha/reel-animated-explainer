@@ -1,0 +1,5 @@
+{
+  "name": "dev-desktop",
+  "npm": ["@fontsource/manrope@^5", "@fontsource/jetbrains-mono@^5", "@fontsource/caveat@^5"],
+  "captions": {"maxc": 22, "lines": 2}
+}

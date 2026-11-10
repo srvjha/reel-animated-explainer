@@ -1,0 +1,10 @@
+{
+  "name": "theme-dev-desktop",
+  "version": "1.0.0",
+  "description": "Reel theme: dev desktop. For personal workflow reels: the reel lives on the creator's desktop. The camera is one app and each step opens as its own app window (AI chat, whiteboard, schema designer, spec.md editor, browser with real screenshots, terminal, notes) with genie-style open and minimize into a dock, over a sunset wallpaper with a menu bar. Handwritten sticky notes, lime highlighter captions, lo-fi music.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "remotion", "workflow", "ai coding", "desktop", "personal", "storytelling", "explainer"]
+}

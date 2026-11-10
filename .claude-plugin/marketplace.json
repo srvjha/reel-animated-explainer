@@ -132,6 +132,11 @@
       "description": "Theme: light dotted canvas with indigo / violet accents for AI and LLM reels; speaker and a two-way window alternate with animated transitions (chat streaming mock, tokens, GPU grid, meters)."
     },
     {
+      "name": "theme-dev-desktop",
+      "source": "./plugins/theme-dev-desktop",
+      "description": "Theme: the reel lives on the creator's desktop; camera and app windows (AI chat, whiteboard, schema, spec.md, browser, terminal, notes) swap with genie-style dock animations. For personal workflow reels."
+    },
+    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

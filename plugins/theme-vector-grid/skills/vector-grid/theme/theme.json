@@ -1,0 +1,12 @@
+{
+  "name": "vector-grid",
+  "engine": "hyperframes",
+  "canvas": "#05090c",
+  "grid": {"minor": "rgba(103,232,249,.06) 40px", "major": "rgba(110,231,183,.10) 200px"},
+  "colors": {"teal": "#2DE2C8", "red": "#FF4D5E", "green": "#7CF29A", "amber": "#FFC857", "ink": "#F2F6F8", "panel": "rgba(10,18,24,.94)"},
+  "fonts": {"captions": "Montserrat 800 62px uppercase", "accent": "Abril Fatface 66px", "display": "Montserrat 900", "data": "JetBrains Mono 500/700"},
+  "layouts": {"split": "stage y 72 scale .93, face clip-path inset(880px 0 0 0) video y 580, caption y 880",
+              "full": "stage y 400, face hidden, caption y 1560",
+              "face": "full source, caption y 1330",
+              "punch": "video scale 1.32 origin 540 700, caption y 1360"}
+}

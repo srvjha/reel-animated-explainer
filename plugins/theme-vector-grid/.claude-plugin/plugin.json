@@ -1,0 +1,10 @@
+{
+  "name": "theme-vector-grid",
+  "version": "1.0.0",
+  "description": "Reel theme: vector grid. Built on herk-edit-kit (HyperFrames + GSAP) instead of Remotion. Dark graph paper with teal as the concept color, red for the wrong way and green for the payoff. Hard-cut layouts (split, full graphic, full face, punch-in), one stage of 1080x880 sub-compositions, kit-style boxed captions with Abril Fatface accents. Parts: key-value cache table with HIT/MISS pills, paraphrase grid, embedding vector strip, 2D vector space with clusters, similarity meter with threshold, latency race lanes, bloom filter bits, TTL bars, policy version card, summary chips.",
+  "author": {"name": "Saurav Jha", "url": "https://srvjha.in"},
+  "homepage": "https://github.com/srvjha/reel-animated-explainer",
+  "repository": "https://github.com/srvjha/reel-animated-explainer",
+  "license": "MIT",
+  "keywords": ["reels", "video", "hyperframes", "gsap", "herk-edit-kit", "semantic cache", "embeddings", "llm", "system design", "dark", "teal"]
+}

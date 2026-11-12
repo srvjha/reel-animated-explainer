@@ -147,11 +147,6 @@
       "description": "Theme on herk-edit-kit (HyperFrames + GSAP): dark graph paper with teal, red and green; vector space, similarity meter, cache HIT/MISS tables and boxed captions."
     },
     {
-      "name": "theme-aurora-glass",
-      "source": "./plugins/theme-aurora-glass",
-      "description": "Theme: night canvas with a blue/aqua aurora, frosted glass panels, focus-pull page reveals and kit-style boxed captions."
-    },
-    {
       "name": "reel-classic",
       "source": "./plugins/reel-classic",
       "description": "The original Python pipeline: split-panel (diagram over a black top) and full-screen (cut-out speaker) modes."

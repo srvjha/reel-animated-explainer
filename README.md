@@ -31,7 +31,6 @@ Built while editing the **Building Backend Systems** series.
 | **violet-dots** | Light dotted canvas for AI and LLM topics: talk and a two-way window alternate with animated transitions; chat streaming mock, tokens, GPU grid, meters |
 | **dev-desktop** | Personal workflow story on a desktop: camera and app windows swap with genie-style dock animations; sticky notes, terminal, spec.md, real browser screenshots |
 | **ember-ops** | Dark ops console with orange and white: scan-band page reveals, gauges, token bucket, HTTP cards, article screenshots with an orange highlighter |
-| **aurora-glass** | Night canvas with a blue/aqua aurora and frosted glass panels, focus-pull page reveals, kit-style boxed captions; built for caching, embeddings and vector search explainers |
 | **vector-grid** | Built on herk-edit-kit (HyperFrames + GSAP): dark graph paper with teal, red and green, split / full / punch-in hard cuts, vector space, similarity meter, cache HIT/MISS tables, boxed captions |
 | **void-index** | List and countdown reels: near-black with blue, cyan and brown glow, 1..N progress rail, countdown ring, item cards with outlined numbers |
 | **chat-wall** | Messenger look: doodle chat wallpaper, teal bars, chat-bubble captions with ticks, phone mockups, cut-out speaker |
@@ -66,7 +65,6 @@ Built while editing the **Building Backend Systems** series.
 <p align="center"><img src="demo/theme-dev-desktop.jpg" width="720" alt="dev-desktop theme frames"></p>
 <p align="center"><img src="demo/theme-ember-ops.jpg" width="720" alt="ember-ops theme frames"></p>
 <p align="center"><img src="demo/theme-vector-grid.jpg" width="720" alt="vector-grid theme frames"></p>
-<p align="center"><img src="demo/theme-aurora-glass.jpg" width="720" alt="aurora-glass theme frames"></p>
 
 ## Install
 
@@ -78,7 +76,7 @@ In Claude Code:
 /plugin install theme-yellow-ticker@reel-animated-explainer
 ```
 
-Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-orange-board`, `theme-card-catalog`, `theme-night-blueprint`, `theme-mono-map`, `theme-red-signal`, `theme-tomato-app`, `theme-violet-dots`, `theme-dev-desktop`, `theme-ember-ops`, `theme-vector-grid`, `theme-aurora-glass`). It runs on your own Claude Code login; nothing else to connect.
+Install as many themes as you like (`theme-lime-bento`, `theme-cream-passport`, `theme-control-panel`, `theme-pip-grid`, `theme-editor-light`, `theme-launch-promo`, `theme-noir-red`, `theme-festive-ops`, `theme-saffron-ledger`, `theme-chat-wall`, `theme-void-index`, `theme-ticket-red`, `theme-sketchbook`, `theme-receipt-tape`, `theme-packet-lab`, `theme-dotgrid-dark`, `theme-orange-board`, `theme-card-catalog`, `theme-night-blueprint`, `theme-mono-map`, `theme-red-signal`, `theme-tomato-app`, `theme-violet-dots`, `theme-dev-desktop`, `theme-ember-ops`, `theme-vector-grid`). It runs on your own Claude Code login; nothing else to connect.
 
 ## Use
 

@@ -109,12 +109,14 @@ A theme is a tiny plugin: a `kit.tsx` that exports a `Frame` (background, speake
 
 or read [`plugins/reel-studio/skills/make-theme/SKILL.md`](plugins/reel-studio/skills/make-theme/SKILL.md). PRs with new themes are welcome.
 
+The full house-style playbook (layouts, captions, themes, music levels, screenshots, checks) is in [`plugins/reel-studio/skills/reel-animated-explainer/SKILL.md`](plugins/reel-studio/skills/reel-animated-explainer/SKILL.md). Upload it as a skill in Claude to get the same editing quality anywhere.
+
 ## Repo layout
 
 ```
 .claude-plugin/marketplace.json
 plugins/
-  reel-studio/            engine: skills (edit-reel, make-theme), Remotion template, pipeline scripts
+  reel-studio/            engine: skills (edit-reel, make-theme, reel-animated-explainer), Remotion template, pipeline scripts
   theme-yellow-ticker/    skills/yellow-ticker/{SKILL.md, theme/{kit.tsx, sound.py, theme.json, example/}}
   theme-lime-bento/
   theme-cream-passport/
